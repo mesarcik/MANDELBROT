@@ -1,0 +1,505 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: pong.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pong.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pong"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : pong
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/bluelabuser/MSRMIC004/YODA/hvsync_generator.v" into library work
+Parsing module <hvsync_generator>.
+Analyzing Verilog file "/home/bluelabuser/MSRMIC004/YODA/pong.v" into library work
+Parsing module <pong>.
+WARNING:HDLCompiler:751 - "/home/bluelabuser/MSRMIC004/YODA/pong.v" Line 94: Redeclaration of ansi port vga_R is not allowed
+WARNING:HDLCompiler:98 - "/home/bluelabuser/MSRMIC004/YODA/pong.v" Line 94: vga_R was previously declared with a range
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <pong>.
+
+Elaborating module <hvsync_generator>.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/MSRMIC004/YODA/hvsync_generator.v" Line 17: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/MSRMIC004/YODA/hvsync_generator.v" Line 20: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/MSRMIC004/YODA/pong.v" Line 33: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/MSRMIC004/YODA/pong.v" Line 38: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/MSRMIC004/YODA/pong.v" Line 78: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/bluelabuser/MSRMIC004/YODA/pong.v" Line 84: Result of 32-bit expression is truncated to fit in 9-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pong>.
+    Related source file is "/home/bluelabuser/MSRMIC004/YODA/pong.v".
+    Register <vga_B> equivalent to <vga_G> has been removed
+    Found 3-bit register for signal <quadBr>.
+    Found 9-bit register for signal <PaddlePosition>.
+    Found 1-bit register for signal <ball_inX>.
+    Found 1-bit register for signal <ball_inY>.
+    Found 1-bit register for signal <ResetCollision>.
+    Found 1-bit register for signal <CollisionX1>.
+    Found 1-bit register for signal <CollisionX2>.
+    Found 1-bit register for signal <CollisionY1>.
+    Found 1-bit register for signal <CollisionY2>.
+    Found 10-bit register for signal <ballX>.
+    Found 1-bit register for signal <ball_dirX>.
+    Found 9-bit register for signal <ballY>.
+    Found 1-bit register for signal <ball_dirY>.
+    Found 1-bit register for signal <vga_R>.
+    Found 1-bit register for signal <vga_G>.
+    Found 3-bit register for signal <quadAr>.
+    Found 9-bit adder for signal <PaddlePosition[8]_GND_1_o_add_6_OUT> created at line 33.
+    Found 11-bit adder for signal <_n0217> created at line 48.
+    Found 10-bit adder for signal <_n0211> created at line 51.
+    Found 10-bit adder for signal <n0148> created at line 57.
+    Found 10-bit adder for signal <n0149> created at line 57.
+    Found 10-bit adder for signal <_n0221> created at line 64.
+    Found 11-bit adder for signal <_n0214> created at line 66.
+    Found 32-bit adder for signal <n0129> created at line 78.
+    Found 32-bit adder for signal <n0132> created at line 84.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_10_OUT<8:0>> created at line 38.
+    Found 10-bit comparator equal for signal <CounterX[9]_ballX[9]_equal_17_o> created at line 48
+    Found 9-bit comparator equal for signal <CounterY[8]_ballY[8]_equal_22_o> created at line 51
+    Found 10-bit comparator lessequal for signal <n0040> created at line 57
+    Found 10-bit comparator lessequal for signal <n0043> created at line 57
+    Found 10-bit comparator equal for signal <GND_1_o_GND_1_o_equal_24_o> created at line 51
+    Found 11-bit comparator equal for signal <GND_1_o_GND_1_o_equal_48_o> created at line 66
+    Found 11-bit comparator equal for signal <GND_1_o_GND_1_o_equal_19_o> created at line 48
+    Found 10-bit comparator equal for signal <GND_1_o_GND_1_o_equal_40_o> created at line 64
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <pong> synthesized.
+
+Synthesizing Unit <hvsync_generator>.
+    Related source file is "/home/bluelabuser/MSRMIC004/YODA/hvsync_generator.v".
+    Found 9-bit register for signal <CounterY>.
+    Found 1-bit register for signal <vga_HS>.
+    Found 1-bit register for signal <vga_VS>.
+    Found 1-bit register for signal <inDisplayArea>.
+    Found 10-bit register for signal <CounterX>.
+    Found 10-bit adder for signal <CounterX[9]_GND_2_o_add_2_OUT> created at line 17.
+    Found 9-bit adder for signal <CounterY[8]_GND_2_o_add_6_OUT> created at line 20.
+    Found 9-bit comparator greater for signal <CounterY[8]_PWR_2_o_LessThan_15_o> created at line 32
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <hvsync_generator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 11
+ 10-bit adder                                          : 5
+ 11-bit adder                                          : 2
+ 32-bit adder                                          : 2
+ 9-bit adder                                           : 1
+ 9-bit addsub                                          : 1
+# Registers                                            : 21
+ 1-bit register                                        : 14
+ 10-bit register                                       : 2
+ 3-bit register                                        : 2
+ 9-bit register                                        : 3
+# Comparators                                          : 9
+ 10-bit comparator equal                               : 3
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator equal                               : 2
+ 9-bit comparator equal                                : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 3
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <hvsync_generator>.
+The following registers are absorbed into counter <CounterX>: 1 register on signal <CounterX>.
+The following registers are absorbed into counter <CounterY>: 1 register on signal <CounterY>.
+Unit <hvsync_generator> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pong>.
+The following registers are absorbed into counter <PaddlePosition>: 1 register on signal <PaddlePosition>.
+The following registers are absorbed into accumulator <ballX>: 1 register on signal <ballX>.
+The following registers are absorbed into accumulator <ballY>: 1 register on signal <ballY>.
+Unit <pong> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 10-bit adder                                          : 4
+ 11-bit adder                                          : 2
+# Counters                                             : 3
+ 10-bit up counter                                     : 1
+ 9-bit up counter                                      : 1
+ 9-bit updown counter                                  : 1
+# Accumulators                                         : 2
+ 10-bit up accumulator                                 : 1
+ 9-bit up accumulator                                  : 1
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+# Comparators                                          : 9
+ 10-bit comparator equal                               : 3
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator equal                               : 2
+ 9-bit comparator equal                                : 1
+ 9-bit comparator greater                              : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <pong> ...
+
+Optimizing unit <hvsync_generator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pong, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <pong> :
+	Found 2-bit shift register for signal <quadBr_1>.
+	Found 2-bit shift register for signal <quadAr_1>.
+Unit <pong> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 63
+ Flip-Flops                                            : 63
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pong.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 276
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 17
+#      LUT2                        : 34
+#      LUT3                        : 24
+#      LUT4                        : 27
+#      LUT5                        : 10
+#      LUT6                        : 53
+#      MUXCY                       : 52
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 47
+# FlipFlops/Latches                : 65
+#      FD                          : 9
+#      FDE                         : 39
+#      FDR                         : 15
+#      FDRE                        : 2
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 2
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              65  out of  126800     0%  
+ Number of Slice LUTs:                  174  out of  63400     0%  
+    Number used as Logic:               172  out of  63400     0%  
+    Number used as Memory:                2  out of  19000     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    176
+   Number with an unused Flip Flop:     111  out of    176    63%  
+   Number with an unused LUT:             2  out of    176     1%  
+   Number of fully used LUT-FF pairs:    63  out of    176    35%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    210     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 67    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.451ns (Maximum Frequency: 289.729MHz)
+   Minimum input arrival time before clock: 0.289ns
+   Maximum output required time after clock: 1.033ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.451ns (frequency: 289.729MHz)
+  Total number of paths / destination ports: 3689 / 121
+-------------------------------------------------------------------------
+Delay:               3.451ns (Levels of Logic = 5)
+  Source:            PaddlePosition_8 (FF)
+  Destination:       CollisionX1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: PaddlePosition_8 to CollisionX1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.361   0.721  PaddlePosition_8 (PaddlePosition_8)
+     LUT6:I0->O            2   0.097   0.561  Madd_n0148_xor<8>11 (n0148<8>)
+     LUT4:I0->O            1   0.097   0.000  Mcompar_BUS_0004_CounterX[9]_LessThan_30_o_lut<4> (Mcompar_BUS_0004_CounterX[9]_LessThan_30_o_lut<4>)
+     MUXCY:S->O            6   0.583   0.534  Mcompar_BUS_0004_CounterX[9]_LessThan_30_o_cy<4> (BUS_0004_CounterX[9]_LessThan_30_o)
+     LUT6:I3->O            1   0.097   0.295  BouncingObject_GND_1_o_AND_16_o22 (BouncingObject_GND_1_o_AND_16_o2)
+     LUT6:I5->O            1   0.097   0.000  CollisionX1_glue_set (CollisionX1_glue_set)
+     FDR:D                     0.008          CollisionX1
+    ----------------------------------------
+    Total                      3.451ns (1.340ns logic, 2.112ns route)
+                                       (38.8% logic, 61.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.289ns (Levels of Logic = 1)
+  Source:            quadB (PAD)
+  Destination:       Mshreg_quadBr_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: quadB to Mshreg_quadBr_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.279  quadB_IBUF (quadB_IBUF)
+     SRLC16E:D                 0.009          Mshreg_quadBr_1
+    ----------------------------------------
+    Total                      0.289ns (0.010ns logic, 0.279ns route)
+                                       (3.5% logic, 96.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              1.033ns (Levels of Logic = 2)
+  Source:            syncgen/vga_HS (FF)
+  Destination:       vga_h_sync (PAD)
+  Source Clock:      clk rising
+
+  Data Path: syncgen/vga_HS to vga_h_sync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.361   0.279  syncgen/vga_HS (syncgen/vga_HS)
+     INV:I->O              1   0.113   0.279  syncgen/vga_h_sync1_INV_0 (vga_h_sync_OBUF)
+     OBUF:I->O                 0.000          vga_h_sync_OBUF (vga_h_sync)
+    ----------------------------------------
+    Total                      1.033ns (0.474ns logic, 0.559ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.451|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.12 secs
+ 
+--> 
+
+
+Total memory usage is 506912 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

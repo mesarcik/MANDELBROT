@@ -1,0 +1,5 @@
+verilog work "VGA_Driver.v"
+verilog work "MandelbrotGen.v"
+verilog work "ipcore_dir/best_ram_eva.v"
+verilog work "Debounce.v"
+verilog work "YoDawg.v"

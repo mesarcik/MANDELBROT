@@ -1,0 +1,6 @@
+Welcome to Xilinx CORE Generator.
+Help system initialized.
+The IP Catalog has been reloaded.
+Opening project file
+/home/bluelabuser/Desktop/YODA_05-May/ipcore_dir/coregen.cgp.
+Closed project file.

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Jonathan\Desktop\YODA_18-final\YoDawg.ncd
+OUTFILE=C:\Users\Jonathan\Desktop\YODA_18-final\YoDawg.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\Jonathan\Desktop\YODA_18-final
+LICENSE=WebPack
+USER_INFO=211201162_0_0_332

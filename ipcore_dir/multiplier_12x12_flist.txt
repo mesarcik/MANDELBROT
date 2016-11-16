@@ -1,0 +1,14 @@
+# Output products list for <multiplier_12x12>
+_xmsgs/pn_parser.xmsgs
+multiplier_12x12/doc/mult_gen_ds255.pdf
+multiplier_12x12/doc/mult_gen_v11_2_readme.txt
+multiplier_12x12/doc/mult_gen_v11_2_vinfo.html
+multiplier_12x12.asy
+multiplier_12x12.gise
+multiplier_12x12.ngc
+multiplier_12x12.v
+multiplier_12x12.veo
+multiplier_12x12.xco
+multiplier_12x12.xise
+multiplier_12x12_flist.txt
+multiplier_12x12_xmdf.tcl

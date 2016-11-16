@@ -1,0 +1,712 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.51 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.51 secs
+ 
+--> Reading design: YoDawg.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "YoDawg.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "YoDawg"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : YoDawg
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Jonathan\Desktop\YODA_18-final\VGA_Driver.v" into library work
+Parsing module <VGA_Driver>.
+Analyzing Verilog file "C:\Users\Jonathan\Desktop\YODA_18-final\MandelbrotGen.v" into library work
+Parsing module <MandelbrotGen>.
+Analyzing Verilog file "C:\Users\Jonathan\Desktop\YODA_18-final\ipcore_dir\best_ram_eva.v" into library work
+Parsing module <best_ram_eva>.
+Analyzing Verilog file "C:\Users\Jonathan\Desktop\YODA_18-final\Debounce.v" into library work
+Parsing module <Debounce>.
+Analyzing Verilog file "C:\Users\Jonathan\Desktop\YODA_18-final\YoDawg.v" into library work
+Parsing module <YoDawg>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <YoDawg>.
+
+Elaborating module <MandelbrotGen>.
+WARNING:HDLCompiler:413 - "C:\Users\Jonathan\Desktop\YODA_18-final\MandelbrotGen.v" Line 192: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Jonathan\Desktop\YODA_18-final\MandelbrotGen.v" Line 199: Result of 2-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <VGA_Driver>.
+
+Elaborating module <best_ram_eva>.
+WARNING:HDLCompiler:1499 - "C:\Users\Jonathan\Desktop\YODA_18-final\ipcore_dir\best_ram_eva.v" Line 39: Empty module <best_ram_eva> remains a black box.
+WARNING:HDLCompiler:1127 - "C:\Users\Jonathan\Desktop\YODA_18-final\YoDawg.v" Line 65: Assignment to doutA ignored, since the identifier is never used
+
+Elaborating module <Debounce>.
+WARNING:HDLCompiler:413 - "C:\Users\Jonathan\Desktop\YODA_18-final\YoDawg.v" Line 155: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\Jonathan\Desktop\YODA_18-final\YoDawg.v" Line 50: Net <dinB[11]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Jonathan\Desktop\YODA_18-final\YoDawg.v" Line 55: Net <web> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <YoDawg>.
+    Related source file is "C:\Users\Jonathan\Desktop\YODA_18-final\YoDawg.v".
+INFO:Xst:3210 - "C:\Users\Jonathan\Desktop\YODA_18-final\YoDawg.v" line 65: Output port <douta> of the instance <best_ram_eva0> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <dinB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <web> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 5-bit register for signal <BTNS>.
+    Found 1-bit register for signal <FeedbackUp>.
+    Found 1-bit register for signal <FeedbackZoom>.
+    Found 1-bit register for signal <FeedbackLeft>.
+    Found 1-bit register for signal <FeedbackRight>.
+    Found 1-bit register for signal <LD0>.
+    Found 2-bit register for signal <Count>.
+    Found 19-bit register for signal <addrB>.
+    Found 12-bit register for signal <RGB>.
+    Found 1-bit register for signal <FeedbackDown>.
+    Found 2-bit adder for signal <Count[1]_GND_1_o_add_18_OUT> created at line 147.
+    Found 19-bit adder for signal <addrB[18]_GND_1_o_add_28_OUT> created at line 155.
+    Found 10-bit comparator greater for signal <GND_1_o_vcount[9]_LessThan_24_o> created at line 153
+    Found 10-bit comparator greater for signal <vcount[9]_PWR_1_o_LessThan_25_o> created at line 153
+    Found 10-bit comparator greater for signal <GND_1_o_hcount[9]_LessThan_26_o> created at line 153
+    Found 10-bit comparator greater for signal <hcount[9]_PWR_1_o_LessThan_27_o> created at line 153
+    Found 19-bit comparator greater for signal <addrB[18]_PWR_1_o_LessThan_28_o> created at line 154
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  44 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <YoDawg> synthesized.
+
+Synthesizing Unit <MandelbrotGen>.
+    Related source file is "C:\Users\Jonathan\Desktop\YODA_18-final\MandelbrotGen.v".
+    Found 19-bit register for signal <addrA>.
+    Found 10-bit register for signal <x_count>.
+    Found 12-bit register for signal <iterations>.
+    Found 1-bit register for signal <calculating>.
+    Found 18-bit register for signal <C_imag_start>.
+    Found 18-bit register for signal <C_real_start>.
+    Found 18-bit register for signal <shift_val>.
+    Found 18-bit register for signal <C_real>.
+    Found 18-bit register for signal <C_imag>.
+    Found 18-bit register for signal <Z_real>.
+    Found 18-bit register for signal <Z_imag>.
+    Found 1-bit register for signal <Count>.
+    Found 12-bit register for signal <dinA>.
+    Found 1-bit register for signal <init>.
+    Found 18-bit subtractor for signal <C_imag_start[17]_shift_val[12]_sub_5_OUT> created at line 65.
+    Found 18-bit subtractor for signal <C_real_start[17]_shift_val[12]_sub_9_OUT> created at line 75.
+    Found 18-bit subtractor for signal <n0339> created at line 176.
+    Found 18-bit subtractor for signal <C_imag[17]_shift_val[17]_sub_79_OUT> created at line 186.
+    Found 18-bit adder for signal <C_imag_start[17]_shift_val[12]_add_6_OUT> created at line 70.
+    Found 18-bit adder for signal <C_real_start[17]_shift_val[12]_add_10_OUT> created at line 79.
+    Found 18-bit adder for signal <Z_real[17]_Z_imag[17]_add_54_OUT> created at line 156.
+    Found 12-bit adder for signal <iterations[11]_GND_2_o_add_58_OUT> created at line 163.
+    Found 18-bit adder for signal <Z_real[17]_C_imag[17]_add_61_OUT> created at line 175.
+    Found 18-bit adder for signal <Z_real[17]_C_real[17]_add_63_OUT> created at line 176.
+    Found 12-bit adder for signal <iterations[11]_GND_2_o_add_64_OUT> created at line 177.
+    Found 18-bit adder for signal <C_real[17]_shift_val[17]_add_76_OUT> created at line 182.
+    Found 10-bit adder for signal <x_count[9]_GND_2_o_add_81_OUT> created at line 192.
+    Found 19-bit adder for signal <addrA[18]_GND_2_o_add_85_OUT> created at line 195.
+    Found 1-bit adder for signal <Count_PWR_2_o_add_99_OUT<0>> created at line 199.
+    Found 18x18-bit multiplier for signal <n0251> created at line 152.
+    Found 18x18-bit multiplier for signal <n0252> created at line 154.
+    Found 18x18-bit multiplier for signal <n0256> created at line 173.
+    Found 19-bit comparator greater for signal <PWR_2_o_addrA[18]_LessThan_51_o> created at line 140
+    Found 18-bit comparator greater for signal <Z_real[17]_GND_2_o_LessThan_56_o> created at line 158
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred 182 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred 129 Multiplexer(s).
+Unit <MandelbrotGen> synthesized.
+
+Synthesizing Unit <VGA_Driver>.
+    Related source file is "C:\Users\Jonathan\Desktop\YODA_18-final\VGA_Driver.v".
+    Found 10-bit register for signal <hcount>.
+    Found 10-bit register for signal <vcount>.
+    Found 1-bit register for signal <ven>.
+    Found 10-bit register for signal <hc>.
+    Found 1-bit register for signal <hsync>.
+    Found 10-bit register for signal <vc>.
+    Found 1-bit register for signal <vsync>.
+    Found 2-bit register for signal <Count>.
+    Found 2-bit adder for signal <Count[1]_GND_4_o_add_1_OUT> created at line 16.
+    Found 10-bit adder for signal <hc[9]_GND_4_o_add_4_OUT> created at line 28.
+    Found 10-bit adder for signal <vc[9]_GND_4_o_add_9_OUT> created at line 44.
+    Found 10-bit comparator lessequal for signal <hc[9]_GND_4_o_LessThan_7_o> created at line 32
+    Found 10-bit comparator lessequal for signal <vc[9]_GND_4_o_LessThan_12_o> created at line 47
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <VGA_Driver> synthesized.
+
+Synthesizing Unit <Debounce>.
+    Related source file is "C:\Users\Jonathan\Desktop\YODA_18-final\Debounce.v".
+    Found 1-bit register for signal <block>.
+    Found 1-bit register for signal <NextState>.
+    Found 27-bit register for signal <Counter>.
+    Found 27-bit adder for signal <Counter[26]_GND_6_o_add_2_OUT> created at line 14.
+    Found 1-bit comparator not equal for signal <n0003> created at line 15
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 18x18-bit multiplier                                  : 3
+# Adders/Subtractors                                   : 23
+ 1-bit adder                                           : 1
+ 10-bit adder                                          : 3
+ 12-bit adder                                          : 2
+ 18-bit adder                                          : 4
+ 18-bit addsub                                         : 2
+ 18-bit subtractor                                     : 2
+ 19-bit adder                                          : 2
+ 2-bit adder                                           : 2
+ 27-bit adder                                          : 5
+# Registers                                            : 47
+ 1-bit register                                        : 22
+ 10-bit register                                       : 5
+ 12-bit register                                       : 3
+ 18-bit register                                       : 7
+ 19-bit register                                       : 2
+ 2-bit register                                        : 2
+ 27-bit register                                       : 5
+ 5-bit register                                        : 1
+# Comparators                                          : 14
+ 1-bit comparator not equal                            : 5
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 2
+ 18-bit comparator greater                             : 1
+ 19-bit comparator greater                             : 2
+# Multiplexers                                         : 132
+ 1-bit 2-to-1 multiplexer                              : 75
+ 10-bit 2-to-1 multiplexer                             : 5
+ 12-bit 2-to-1 multiplexer                             : 4
+ 18-bit 2-to-1 multiplexer                             : 43
+ 19-bit 2-to-1 multiplexer                             : 5
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/best_ram_eva.ngc>.
+Loading core <best_ram_eva> for timing and area information for instance <best_ram_eva0>.
+
+Synthesizing (advanced) Unit <Debounce>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+Unit <Debounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MandelbrotGen>.
+The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
+Unit <MandelbrotGen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA_Driver>.
+The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
+The following registers are absorbed into counter <hc>: 1 register on signal <hc>.
+The following registers are absorbed into counter <vc>: 1 register on signal <vc>.
+Unit <VGA_Driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <YoDawg>.
+The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
+Unit <YoDawg> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 18x18-bit multiplier                                  : 3
+# Adders/Subtractors                                   : 13
+ 10-bit adder                                          : 1
+ 12-bit adder                                          : 2
+ 18-bit adder                                          : 4
+ 18-bit addsub                                         : 2
+ 18-bit subtractor                                     : 2
+ 19-bit adder                                          : 2
+# Counters                                             : 10
+ 1-bit up counter                                      : 1
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 2
+ 27-bit up counter                                     : 5
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+# Comparators                                          : 14
+ 1-bit comparator not equal                            : 5
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 2
+ 18-bit comparator greater                             : 1
+ 19-bit comparator greater                             : 2
+# Multiplexers                                         : 149
+ 1-bit 2-to-1 multiplexer                              : 93
+ 10-bit 2-to-1 multiplexer                             : 5
+ 12-bit 2-to-1 multiplexer                             : 4
+ 18-bit 2-to-1 multiplexer                             : 42
+ 19-bit 2-to-1 multiplexer                             : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <YoDawg> ...
+
+Optimizing unit <MandelbrotGen> ...
+
+Optimizing unit <VGA_Driver> ...
+WARNING:Xst:1710 - FF/Latch <Down_Debouncer/Counter_21> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Down_Debouncer/Counter_22> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Down_Debouncer/Counter_23> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Down_Debouncer/Counter_24> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Down_Debouncer/Counter_25> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Down_Debouncer/Counter_26> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Up_Debouncer/Counter_21> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Up_Debouncer/Counter_22> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Up_Debouncer/Counter_23> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Up_Debouncer/Counter_24> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Up_Debouncer/Counter_25> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Up_Debouncer/Counter_26> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MandelbrotGen0/dinA_11> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MandelbrotGen0/iterations_11> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MandelbrotGen0/iterations_10> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MandelbrotGen0/iterations_9> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MandelbrotGen0/iterations_8> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MandelbrotGen0/calculating> (without init value) has a constant value of 1 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Right_Debouncer/Counter_21> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Right_Debouncer/Counter_22> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Right_Debouncer/Counter_23> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Right_Debouncer/Counter_24> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Right_Debouncer/Counter_25> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Right_Debouncer/Counter_26> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Zoom_Debouncer/Counter_21> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Zoom_Debouncer/Counter_22> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Zoom_Debouncer/Counter_23> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Zoom_Debouncer/Counter_24> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Zoom_Debouncer/Counter_25> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Zoom_Debouncer/Counter_26> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Left_Debouncer/Counter_21> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Left_Debouncer/Counter_22> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Left_Debouncer/Counter_23> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Left_Debouncer/Counter_24> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Left_Debouncer/Counter_25> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Left_Debouncer/Counter_26> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MandelbrotGen0/dinA_9> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MandelbrotGen0/dinA_8> (without init value) has a constant value of 0 in block <YoDawg>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Count_0> in Unit <YoDawg> is equivalent to the following 2 FFs/Latches, which will be removed : <MandelbrotGen0/Count> <Vga_Driver0/Count_0> 
+INFO:Xst:2261 - The FF/Latch <Count_1> in Unit <YoDawg> is equivalent to the following FF/Latch, which will be removed : <Vga_Driver0/Count_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block YoDawg, actual ratio is 2.
+FlipFlop BTNS_2 has been replicated 1 time(s)
+FlipFlop BTNS_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 377
+ Flip-Flops                                            : 377
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : YoDawg.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2169
+#      GND                         : 2
+#      INV                         : 13
+#      LUT1                        : 161
+#      LUT2                        : 48
+#      LUT3                        : 115
+#      LUT4                        : 87
+#      LUT5                        : 376
+#      LUT6                        : 759
+#      MUXCY                       : 280
+#      MUXF7                       : 29
+#      VCC                         : 2
+#      XORCY                       : 297
+# FlipFlops/Latches                : 391
+#      FD                          : 147
+#      FDE                         : 61
+#      FDR                         : 16
+#      FDRE                        : 165
+#      FDS                         : 2
+# RAMS                             : 104
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 103
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 7
+#      OBUF                        : 15
+# DSPs                             : 3
+#      DSP48E1                     : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             391  out of  126800     0%  
+ Number of Slice LUTs:                 1559  out of  63400     2%  
+    Number used as Logic:              1559  out of  63400     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1657
+   Number with an unused Flip Flop:    1266  out of   1657    76%  
+   Number with an unused LUT:            98  out of   1657     5%  
+   Number of fully used LUT-FF pairs:   293  out of   1657    17%  
+   Number of unique control sets:        30
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    210    10%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:              104  out of    135    77%  
+    Number using Block RAM only:        104
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                      3  out of    240     1%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk_100M                           | BUFGP                  | 495   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                        | Buffer(FF name)                                                                                                                                                | Load  |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(best_ram_eva0/XST_GND:G)                                                                                                                                                               | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram)    | 182   |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/cascadelata_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/cascadelatb_tmp(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T) | 1     |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 9.645ns (Maximum Frequency: 103.677MHz)
+   Minimum input arrival time before clock: 8.752ns
+   Maximum output required time after clock: 0.645ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_100M'
+  Clock period: 9.645ns (frequency: 103.677MHz)
+  Total number of paths / destination ports: 499009887 / 1290
+-------------------------------------------------------------------------
+Delay:               9.645ns (Levels of Logic = 34)
+  Source:            MandelbrotGen0/shift_val_0 (FF)
+  Destination:       MandelbrotGen0/x_count_9 (FF)
+  Source Clock:      Clk_100M rising
+  Destination Clock: Clk_100M rising
+
+  Data Path: MandelbrotGen0/shift_val_0 to MandelbrotGen0/x_count_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.361   0.570  MandelbrotGen0/shift_val_0 (MandelbrotGen0/shift_val_0)
+     LUT4:I0->O            1   0.097   0.000  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<5> (MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<5>)
+     MUXCY:S->O            1   0.353   0.000  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<5> (MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<6> (MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<7> (MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<8> (MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<9> (MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<10> (MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11> (MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<12> (MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<12>)
+     XORCY:CI->O           5   0.370   0.314  MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_xor<13> (MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>)
+     LUT6:I5->O            1   0.097   0.511  MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT11411_SW1 (N80)
+     LUT6:I3->O            4   0.097   0.309  MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT11411 (MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1141)
+     LUT5:I4->O            4   0.097   0.293  MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1511 (MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<14>)
+     DSP48E1:A14->P14      3   2.823   0.305  MandelbrotGen0/Mmult_n0251 (MandelbrotGen0/n0251<14>)
+     LUT2:I1->O            1   0.097   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<0> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<0> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<1> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<2> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<4> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<5> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<6> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<8> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<9> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<10> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<12> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<13> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<14> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<15> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<15>)
+     XORCY:CI->O           3   0.370   0.305  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_xor<16> (MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<16>)
+     LUT5:I4->O            1   0.097   0.556  MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7_SW2 (N221)
+     LUT6:I2->O            9   0.097   0.316  MandelbrotGen0/_n03701 (MandelbrotGen0/_n0370)
+     FDR:R                     0.349          MandelbrotGen0/x_count_1
+    ----------------------------------------
+    Total                      9.645ns (6.164ns logic, 3.481ns route)
+                                       (63.9% logic, 36.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_100M'
+  Total number of paths / destination ports: 11908581 / 238
+-------------------------------------------------------------------------
+Offset:              8.752ns (Levels of Logic = 26)
+  Source:            SW15 (PAD)
+  Destination:       MandelbrotGen0/x_count_9 (FF)
+  Destination Clock: Clk_100M rising
+
+  Data Path: SW15 to MandelbrotGen0/x_count_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           203   0.001   0.644  SW15_IBUF (SW15_IBUF)
+     LUT3:I0->O           20   0.097   0.383  MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14611 (MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1461)
+     LUT5:I4->O           17   0.097   0.630  MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT128111 (MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT12811)
+     LUT6:I2->O            5   0.097   0.314  MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14511 (MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1451)
+     LUT5:I4->O            4   0.097   0.293  MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1451 (MandelbrotGen0/Z_imag[17]_GND_2_o_mux_48_OUT<9>)
+     DSP48E1:A9->P14       3   2.823   0.389  MandelbrotGen0/Mmult_n0252 (MandelbrotGen0/n0252<14>)
+     LUT2:I0->O            1   0.097   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<0> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<0> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<1> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<2> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<4> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<5> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<6> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<8> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<9> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<10> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<12> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<13> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<14> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<15> (MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<15>)
+     XORCY:CI->O           3   0.370   0.305  MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_xor<16> (MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<16>)
+     LUT5:I4->O            1   0.097   0.556  MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7_SW2 (N221)
+     LUT6:I2->O            9   0.097   0.316  MandelbrotGen0/_n03701 (MandelbrotGen0/_n0370)
+     FDR:R                     0.349          MandelbrotGen0/x_count_1
+    ----------------------------------------
+    Total                      8.752ns (4.920ns logic, 3.832ns route)
+                                       (56.2% logic, 43.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_100M'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              0.645ns (Levels of Logic = 1)
+  Source:            LD0 (FF)
+  Destination:       LD0 (PAD)
+  Source Clock:      Clk_100M rising
+
+  Data Path: LD0 to LD0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.361   0.283  LD0 (LD0_OBUF)
+     OBUF:I->O                 0.000          LD0_OBUF (LD0)
+    ----------------------------------------
+    Total                      0.645ns (0.361ns logic, 0.283ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk_100M
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_100M       |    9.645|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 177.00 secs
+Total CPU time to Xst completion: 176.23 secs
+ 
+--> 
+
+Total memory usage is 442792 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   47 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

@@ -1,0 +1,1911 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml YoDawg_preroute.twx YoDawg_map.ncd -o YoDawg_preroute.twr
+YoDawg.pcf -ucf YoDawg.ucf
+
+Design file:              YoDawg_map.ncd
+Physical constraint file: YoDawg.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "Clk_100M_BUFGP/IBUFG" PERIOD = 10 ns HIGH 5 ns;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 265608266446177861632 paths analyzed, 18262 endpoints analyzed, 5027 failing endpoints
+ 5027 timing errors detected. (5025 setup errors, 2 hold errors, 0 component switching limit errors)
+ Minimum period is  31.106ns.
+--------------------------------------------------------------------------------
+
+Paths for end point MandelbrotGen0/Z_im_254 (SLICE_X48Y92.CIN), 10555589314555054080 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -21.106ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/Z_re_1 (FF)
+  Destination:          MandelbrotGen0/Z_im_254 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      31.071ns (Levels of Logic = 51)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/Z_re_1 to MandelbrotGen0/Z_im_254
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y34.DQ      Tcko                  0.341   MandelbrotGen0/Z_re<1>
+                                                       MandelbrotGen0/Z_re_1
+    SLICE_X7Y47.B2       net (fanout=263)   e  1.653   MandelbrotGen0/Z_re<1>
+    SLICE_X7Y47.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_lut<4>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+    SLICE_X82Y51.A6      net (fanout=1)     e  1.766   MandelbrotGen0/Mmult_n0085_Madd_8787
+    SLICE_X82Y51.COUT    Topcya                0.492   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_lut<8>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.DMUX    Tcind                 0.371   MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+    SLICE_X1Y5.B5        net (fanout=2)     e  2.607   MandelbrotGen0/Mmult_n0085_Madd_94170
+    SLICE_X1Y5.COUT      Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_lut<19>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.CIN       net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.BMUX      Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+    SLICE_X84Y53.B6      net (fanout=1)     e  2.588   MandelbrotGen0/Mmult_n0085_Madd_98213
+    SLICE_X84Y53.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_lut<23>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.BMUX    Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+    SLICE_X5Y19.B5       net (fanout=2)     e  2.547   MandelbrotGen0/Mmult_n0085_Madd_110270
+    SLICE_X5Y19.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_lut<51>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+    SLICE_X74Y88.B6      net (fanout=1)     e  2.713   MandelbrotGen0/Mmult_n0085_Madd_114250
+    SLICE_X74Y88.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_lut<55>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.BMUX   Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+    SLICE_X11Y59.B5      net (fanout=2)     e  2.352   MandelbrotGen0/Mmult_n0085_Madd_178250
+    SLICE_X11Y59.COUT    Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_lut<178>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X57Y150.B6     net (fanout=1)     e  2.342   MandelbrotGen0/Mmult_n0085_Madd_214258
+    SLICE_X57Y150.COUT   Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_lut<214>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.COUT   Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.BMUX   Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+    SLICE_X48Y84.B6      net (fanout=2)     e  1.611   MandelbrotGen0/n0085<222>
+    SLICE_X48Y84.COUT    Topcyb                0.509   MandelbrotGen0/Z_im<224>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_lut<222>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<228>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<232>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<236>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<240>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<244>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<248>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<252>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CLK     Tcinck                0.174   MandelbrotGen0/Z_im<255>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_xor<255>
+                                                       MandelbrotGen0/Z_im_254
+    -------------------------------------------------  ---------------------------
+    Total                                     31.071ns (10.892ns logic, 20.179ns route)
+                                                       (35.1% logic, 64.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -21.106ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/Z_re_1 (FF)
+  Destination:          MandelbrotGen0/Z_im_254 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      31.071ns (Levels of Logic = 51)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/Z_re_1 to MandelbrotGen0/Z_im_254
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y34.DQ      Tcko                  0.341   MandelbrotGen0/Z_re<1>
+                                                       MandelbrotGen0/Z_re_1
+    SLICE_X7Y47.B2       net (fanout=263)   e  1.653   MandelbrotGen0/Z_re<1>
+    SLICE_X7Y47.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_lut<4>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+    SLICE_X82Y51.A6      net (fanout=1)     e  1.766   MandelbrotGen0/Mmult_n0085_Madd_8787
+    SLICE_X82Y51.COUT    Topcya                0.492   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_lut<8>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.DMUX    Tcind                 0.371   MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+    SLICE_X1Y5.B5        net (fanout=2)     e  2.607   MandelbrotGen0/Mmult_n0085_Madd_94170
+    SLICE_X1Y5.COUT      Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_lut<19>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.CIN       net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.BMUX      Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+    SLICE_X84Y53.B6      net (fanout=1)     e  2.588   MandelbrotGen0/Mmult_n0085_Madd_98213
+    SLICE_X84Y53.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_lut<23>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.BMUX    Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+    SLICE_X5Y19.B5       net (fanout=2)     e  2.547   MandelbrotGen0/Mmult_n0085_Madd_110270
+    SLICE_X5Y19.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_lut<51>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+    SLICE_X74Y88.B6      net (fanout=1)     e  2.713   MandelbrotGen0/Mmult_n0085_Madd_114250
+    SLICE_X74Y88.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_lut<55>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.BMUX   Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+    SLICE_X11Y59.B5      net (fanout=2)     e  2.352   MandelbrotGen0/Mmult_n0085_Madd_178250
+    SLICE_X11Y59.COUT    Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_lut<178>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X11Y69.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X11Y69.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd253_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<220>
+    SLICE_X57Y151.B6     net (fanout=1)     e  2.342   MandelbrotGen0/Mmult_n0085_Madd_218253
+    SLICE_X57Y151.COUT   Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_lut<218>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.BMUX   Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+    SLICE_X48Y84.B6      net (fanout=2)     e  1.611   MandelbrotGen0/n0085<222>
+    SLICE_X48Y84.COUT    Topcyb                0.509   MandelbrotGen0/Z_im<224>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_lut<222>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<228>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<232>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<236>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<240>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<244>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<248>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<252>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CLK     Tcinck                0.174   MandelbrotGen0/Z_im<255>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_xor<255>
+                                                       MandelbrotGen0/Z_im_254
+    -------------------------------------------------  ---------------------------
+    Total                                     31.071ns (10.892ns logic, 20.179ns route)
+                                                       (35.1% logic, 64.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -21.106ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/Z_re_1 (FF)
+  Destination:          MandelbrotGen0/Z_im_254 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      31.071ns (Levels of Logic = 51)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/Z_re_1 to MandelbrotGen0/Z_im_254
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y34.DQ      Tcko                  0.341   MandelbrotGen0/Z_re<1>
+                                                       MandelbrotGen0/Z_re_1
+    SLICE_X7Y47.B2       net (fanout=263)   e  1.653   MandelbrotGen0/Z_re<1>
+    SLICE_X7Y47.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_lut<4>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+    SLICE_X82Y51.A6      net (fanout=1)     e  1.766   MandelbrotGen0/Mmult_n0085_Madd_8787
+    SLICE_X82Y51.COUT    Topcya                0.492   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_lut<8>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.DMUX    Tcind                 0.371   MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+    SLICE_X1Y5.B5        net (fanout=2)     e  2.607   MandelbrotGen0/Mmult_n0085_Madd_94170
+    SLICE_X1Y5.COUT      Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_lut<19>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.CIN       net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.BMUX      Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+    SLICE_X84Y53.B6      net (fanout=1)     e  2.588   MandelbrotGen0/Mmult_n0085_Madd_98213
+    SLICE_X84Y53.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_lut<23>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.BMUX    Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+    SLICE_X5Y19.B5       net (fanout=2)     e  2.547   MandelbrotGen0/Mmult_n0085_Madd_110270
+    SLICE_X5Y19.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_lut<51>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+    SLICE_X74Y88.B6      net (fanout=1)     e  2.713   MandelbrotGen0/Mmult_n0085_Madd_114250
+    SLICE_X74Y88.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_lut<55>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.BMUX   Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+    SLICE_X11Y59.B5      net (fanout=2)     e  2.352   MandelbrotGen0/Mmult_n0085_Madd_178250
+    SLICE_X11Y59.COUT    Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_lut<178>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X57Y150.B6     net (fanout=1)     e  2.342   MandelbrotGen0/Mmult_n0085_Madd_214258
+    SLICE_X57Y150.COUT   Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_lut<214>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.BMUX   Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X48Y83.B6      net (fanout=2)     e  1.611   MandelbrotGen0/n0085<218>
+    SLICE_X48Y83.COUT    Topcyb                0.509   MandelbrotGen0/Z_im<220>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_lut<218>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<220>
+    SLICE_X48Y84.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<220>
+    SLICE_X48Y84.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<224>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<228>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<232>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<236>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<240>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<244>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<248>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<252>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CLK     Tcinck                0.174   MandelbrotGen0/Z_im<255>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_xor<255>
+                                                       MandelbrotGen0/Z_im_254
+    -------------------------------------------------  ---------------------------
+    Total                                     31.071ns (10.892ns logic, 20.179ns route)
+                                                       (35.1% logic, 64.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MandelbrotGen0/Z_im_255 (SLICE_X48Y92.CIN), 10555589314555054080 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -21.056ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/Z_re_1 (FF)
+  Destination:          MandelbrotGen0/Z_im_255 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      31.021ns (Levels of Logic = 51)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/Z_re_1 to MandelbrotGen0/Z_im_255
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y34.DQ      Tcko                  0.341   MandelbrotGen0/Z_re<1>
+                                                       MandelbrotGen0/Z_re_1
+    SLICE_X7Y47.B2       net (fanout=263)   e  1.653   MandelbrotGen0/Z_re<1>
+    SLICE_X7Y47.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_lut<4>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+    SLICE_X82Y51.A6      net (fanout=1)     e  1.766   MandelbrotGen0/Mmult_n0085_Madd_8787
+    SLICE_X82Y51.COUT    Topcya                0.492   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_lut<8>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.DMUX    Tcind                 0.371   MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+    SLICE_X1Y5.B5        net (fanout=2)     e  2.607   MandelbrotGen0/Mmult_n0085_Madd_94170
+    SLICE_X1Y5.COUT      Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_lut<19>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.CIN       net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.BMUX      Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+    SLICE_X84Y53.B6      net (fanout=1)     e  2.588   MandelbrotGen0/Mmult_n0085_Madd_98213
+    SLICE_X84Y53.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_lut<23>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.BMUX    Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+    SLICE_X5Y19.B5       net (fanout=2)     e  2.547   MandelbrotGen0/Mmult_n0085_Madd_110270
+    SLICE_X5Y19.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_lut<51>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+    SLICE_X74Y88.B6      net (fanout=1)     e  2.713   MandelbrotGen0/Mmult_n0085_Madd_114250
+    SLICE_X74Y88.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_lut<55>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.BMUX   Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+    SLICE_X11Y59.B5      net (fanout=2)     e  2.352   MandelbrotGen0/Mmult_n0085_Madd_178250
+    SLICE_X11Y59.COUT    Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_lut<178>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X57Y150.B6     net (fanout=1)     e  2.342   MandelbrotGen0/Mmult_n0085_Madd_214258
+    SLICE_X57Y150.COUT   Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_lut<214>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.COUT   Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.BMUX   Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+    SLICE_X48Y84.B6      net (fanout=2)     e  1.611   MandelbrotGen0/n0085<222>
+    SLICE_X48Y84.COUT    Topcyb                0.509   MandelbrotGen0/Z_im<224>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_lut<222>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<228>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<232>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<236>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<240>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<244>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<248>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<252>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CLK     Tcinck                0.124   MandelbrotGen0/Z_im<255>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_xor<255>
+                                                       MandelbrotGen0/Z_im_255
+    -------------------------------------------------  ---------------------------
+    Total                                     31.021ns (10.842ns logic, 20.179ns route)
+                                                       (35.0% logic, 65.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -21.056ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/Z_re_1 (FF)
+  Destination:          MandelbrotGen0/Z_im_255 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      31.021ns (Levels of Logic = 51)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/Z_re_1 to MandelbrotGen0/Z_im_255
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y34.DQ      Tcko                  0.341   MandelbrotGen0/Z_re<1>
+                                                       MandelbrotGen0/Z_re_1
+    SLICE_X7Y47.B2       net (fanout=263)   e  1.653   MandelbrotGen0/Z_re<1>
+    SLICE_X7Y47.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_lut<4>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+    SLICE_X82Y51.A6      net (fanout=1)     e  1.766   MandelbrotGen0/Mmult_n0085_Madd_8787
+    SLICE_X82Y51.COUT    Topcya                0.492   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_lut<8>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.DMUX    Tcind                 0.371   MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+    SLICE_X1Y5.B5        net (fanout=2)     e  2.607   MandelbrotGen0/Mmult_n0085_Madd_94170
+    SLICE_X1Y5.COUT      Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_lut<19>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.CIN       net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.BMUX      Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+    SLICE_X84Y53.B6      net (fanout=1)     e  2.588   MandelbrotGen0/Mmult_n0085_Madd_98213
+    SLICE_X84Y53.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_lut<23>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.BMUX    Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+    SLICE_X5Y19.B5       net (fanout=2)     e  2.547   MandelbrotGen0/Mmult_n0085_Madd_110270
+    SLICE_X5Y19.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_lut<51>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+    SLICE_X74Y88.B6      net (fanout=1)     e  2.713   MandelbrotGen0/Mmult_n0085_Madd_114250
+    SLICE_X74Y88.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_lut<55>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.BMUX   Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+    SLICE_X11Y59.B5      net (fanout=2)     e  2.352   MandelbrotGen0/Mmult_n0085_Madd_178250
+    SLICE_X11Y59.COUT    Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_lut<178>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X11Y69.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X11Y69.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd253_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<220>
+    SLICE_X57Y151.B6     net (fanout=1)     e  2.342   MandelbrotGen0/Mmult_n0085_Madd_218253
+    SLICE_X57Y151.COUT   Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_lut<218>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.BMUX   Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+    SLICE_X48Y84.B6      net (fanout=2)     e  1.611   MandelbrotGen0/n0085<222>
+    SLICE_X48Y84.COUT    Topcyb                0.509   MandelbrotGen0/Z_im<224>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_lut<222>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<228>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<232>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<236>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<240>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<244>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<248>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<252>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CLK     Tcinck                0.124   MandelbrotGen0/Z_im<255>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_xor<255>
+                                                       MandelbrotGen0/Z_im_255
+    -------------------------------------------------  ---------------------------
+    Total                                     31.021ns (10.842ns logic, 20.179ns route)
+                                                       (35.0% logic, 65.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -21.056ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/Z_re_1 (FF)
+  Destination:          MandelbrotGen0/Z_im_255 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      31.021ns (Levels of Logic = 51)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/Z_re_1 to MandelbrotGen0/Z_im_255
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y34.DQ      Tcko                  0.341   MandelbrotGen0/Z_re<1>
+                                                       MandelbrotGen0/Z_re_1
+    SLICE_X7Y47.B2       net (fanout=263)   e  1.653   MandelbrotGen0/Z_re<1>
+    SLICE_X7Y47.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_lut<4>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+    SLICE_X82Y51.A6      net (fanout=1)     e  1.766   MandelbrotGen0/Mmult_n0085_Madd_8787
+    SLICE_X82Y51.COUT    Topcya                0.492   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_lut<8>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.DMUX    Tcind                 0.371   MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+    SLICE_X1Y5.B5        net (fanout=2)     e  2.607   MandelbrotGen0/Mmult_n0085_Madd_94170
+    SLICE_X1Y5.COUT      Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_lut<19>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.CIN       net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.BMUX      Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+    SLICE_X84Y53.B6      net (fanout=1)     e  2.588   MandelbrotGen0/Mmult_n0085_Madd_98213
+    SLICE_X84Y53.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_lut<23>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.BMUX    Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+    SLICE_X5Y19.B5       net (fanout=2)     e  2.547   MandelbrotGen0/Mmult_n0085_Madd_110270
+    SLICE_X5Y19.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_lut<51>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+    SLICE_X74Y88.B6      net (fanout=1)     e  2.713   MandelbrotGen0/Mmult_n0085_Madd_114250
+    SLICE_X74Y88.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_lut<55>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.BMUX   Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+    SLICE_X11Y59.B5      net (fanout=2)     e  2.352   MandelbrotGen0/Mmult_n0085_Madd_178250
+    SLICE_X11Y59.COUT    Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_lut<178>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X57Y150.B6     net (fanout=1)     e  2.342   MandelbrotGen0/Mmult_n0085_Madd_214258
+    SLICE_X57Y150.COUT   Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_lut<214>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.BMUX   Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X48Y83.B6      net (fanout=2)     e  1.611   MandelbrotGen0/n0085<218>
+    SLICE_X48Y83.COUT    Topcyb                0.509   MandelbrotGen0/Z_im<220>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_lut<218>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<220>
+    SLICE_X48Y84.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<220>
+    SLICE_X48Y84.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<224>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<228>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<232>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<236>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<240>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<244>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<248>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<252>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CLK     Tcinck                0.124   MandelbrotGen0/Z_im<255>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_xor<255>
+                                                       MandelbrotGen0/Z_im_255
+    -------------------------------------------------  ---------------------------
+    Total                                     31.021ns (10.842ns logic, 20.179ns route)
+                                                       (35.0% logic, 65.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MandelbrotGen0/Z_im_253 (SLICE_X48Y92.CIN), 10555589314555054080 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -21.035ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/Z_re_1 (FF)
+  Destination:          MandelbrotGen0/Z_im_253 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      31.000ns (Levels of Logic = 51)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/Z_re_1 to MandelbrotGen0/Z_im_253
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y34.DQ      Tcko                  0.341   MandelbrotGen0/Z_re<1>
+                                                       MandelbrotGen0/Z_re_1
+    SLICE_X7Y47.B2       net (fanout=263)   e  1.653   MandelbrotGen0/Z_re<1>
+    SLICE_X7Y47.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_lut<4>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+    SLICE_X82Y51.A6      net (fanout=1)     e  1.766   MandelbrotGen0/Mmult_n0085_Madd_8787
+    SLICE_X82Y51.COUT    Topcya                0.492   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_lut<8>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.DMUX    Tcind                 0.371   MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+    SLICE_X1Y5.B5        net (fanout=2)     e  2.607   MandelbrotGen0/Mmult_n0085_Madd_94170
+    SLICE_X1Y5.COUT      Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_lut<19>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.CIN       net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.BMUX      Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+    SLICE_X84Y53.B6      net (fanout=1)     e  2.588   MandelbrotGen0/Mmult_n0085_Madd_98213
+    SLICE_X84Y53.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_lut<23>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.BMUX    Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+    SLICE_X5Y19.B5       net (fanout=2)     e  2.547   MandelbrotGen0/Mmult_n0085_Madd_110270
+    SLICE_X5Y19.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_lut<51>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+    SLICE_X74Y88.B6      net (fanout=1)     e  2.713   MandelbrotGen0/Mmult_n0085_Madd_114250
+    SLICE_X74Y88.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_lut<55>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.BMUX   Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+    SLICE_X11Y59.B5      net (fanout=2)     e  2.352   MandelbrotGen0/Mmult_n0085_Madd_178250
+    SLICE_X11Y59.COUT    Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_lut<178>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X57Y150.B6     net (fanout=1)     e  2.342   MandelbrotGen0/Mmult_n0085_Madd_214258
+    SLICE_X57Y150.COUT   Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_lut<214>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.COUT   Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.BMUX   Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+    SLICE_X48Y84.B6      net (fanout=2)     e  1.611   MandelbrotGen0/n0085<222>
+    SLICE_X48Y84.COUT    Topcyb                0.509   MandelbrotGen0/Z_im<224>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_lut<222>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<228>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<232>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<236>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<240>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<244>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<248>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<252>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CLK     Tcinck                0.103   MandelbrotGen0/Z_im<255>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_xor<255>
+                                                       MandelbrotGen0/Z_im_253
+    -------------------------------------------------  ---------------------------
+    Total                                     31.000ns (10.821ns logic, 20.179ns route)
+                                                       (34.9% logic, 65.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -21.035ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/Z_re_1 (FF)
+  Destination:          MandelbrotGen0/Z_im_253 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      31.000ns (Levels of Logic = 51)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/Z_re_1 to MandelbrotGen0/Z_im_253
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y34.DQ      Tcko                  0.341   MandelbrotGen0/Z_re<1>
+                                                       MandelbrotGen0/Z_re_1
+    SLICE_X7Y47.B2       net (fanout=263)   e  1.653   MandelbrotGen0/Z_re<1>
+    SLICE_X7Y47.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_lut<4>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+    SLICE_X82Y51.A6      net (fanout=1)     e  1.766   MandelbrotGen0/Mmult_n0085_Madd_8787
+    SLICE_X82Y51.COUT    Topcya                0.492   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_lut<8>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.DMUX    Tcind                 0.371   MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+    SLICE_X1Y5.B5        net (fanout=2)     e  2.607   MandelbrotGen0/Mmult_n0085_Madd_94170
+    SLICE_X1Y5.COUT      Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_lut<19>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.CIN       net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.BMUX      Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+    SLICE_X84Y53.B6      net (fanout=1)     e  2.588   MandelbrotGen0/Mmult_n0085_Madd_98213
+    SLICE_X84Y53.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_lut<23>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.BMUX    Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+    SLICE_X5Y19.B5       net (fanout=2)     e  2.547   MandelbrotGen0/Mmult_n0085_Madd_110270
+    SLICE_X5Y19.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_lut<51>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+    SLICE_X74Y88.B6      net (fanout=1)     e  2.713   MandelbrotGen0/Mmult_n0085_Madd_114250
+    SLICE_X74Y88.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_lut<55>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.BMUX   Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+    SLICE_X11Y59.B5      net (fanout=2)     e  2.352   MandelbrotGen0/Mmult_n0085_Madd_178250
+    SLICE_X11Y59.COUT    Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_lut<178>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X11Y69.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X11Y69.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd253_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<220>
+    SLICE_X57Y151.B6     net (fanout=1)     e  2.342   MandelbrotGen0/Mmult_n0085_Madd_218253
+    SLICE_X57Y151.COUT   Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_lut<218>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X57Y152.BMUX   Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<224>
+    SLICE_X48Y84.B6      net (fanout=2)     e  1.611   MandelbrotGen0/n0085<222>
+    SLICE_X48Y84.COUT    Topcyb                0.509   MandelbrotGen0/Z_im<224>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_lut<222>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<228>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<232>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<236>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<240>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<244>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<248>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<252>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CLK     Tcinck                0.103   MandelbrotGen0/Z_im<255>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_xor<255>
+                                                       MandelbrotGen0/Z_im_253
+    -------------------------------------------------  ---------------------------
+    Total                                     31.000ns (10.821ns logic, 20.179ns route)
+                                                       (34.9% logic, 65.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -21.035ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/Z_re_1 (FF)
+  Destination:          MandelbrotGen0/Z_im_253 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      31.000ns (Levels of Logic = 51)(Component delays alone exceeds constraint)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/Z_re_1 to MandelbrotGen0/Z_im_253
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y34.DQ      Tcko                  0.341   MandelbrotGen0/Z_re<1>
+                                                       MandelbrotGen0/Z_re_1
+    SLICE_X7Y47.B2       net (fanout=263)   e  1.653   MandelbrotGen0/Z_re<1>
+    SLICE_X7Y47.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_lut<4>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd87_cy<6>
+    SLICE_X7Y48.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+                                                       MandelbrotGen0/Mmult_n0085_Madd87_cy<10>
+    SLICE_X82Y51.A6      net (fanout=1)     e  1.766   MandelbrotGen0/Mmult_n0085_Madd_8787
+    SLICE_X82Y51.COUT    Topcya                0.492   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_lut<8>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd170_cy<11>
+    SLICE_X82Y52.DMUX    Tcind                 0.371   MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+                                                       MandelbrotGen0/Mmult_n0085_Madd170_cy<15>
+    SLICE_X1Y5.B5        net (fanout=2)     e  2.607   MandelbrotGen0/Mmult_n0085_Madd_94170
+    SLICE_X1Y5.COUT      Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_lut<19>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.CIN       net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd213_cy<21>
+    SLICE_X1Y6.BMUX      Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd213_cy<25>
+    SLICE_X84Y53.B6      net (fanout=1)     e  2.588   MandelbrotGen0/Mmult_n0085_Madd_98213
+    SLICE_X84Y53.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_lut<23>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<25>
+    SLICE_X84Y54.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<29>
+    SLICE_X84Y55.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd234_cy<33>
+    SLICE_X84Y56.BMUX    Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+                                                       MandelbrotGen0/Mmult_n0085_Madd234_cy<37>
+    SLICE_X5Y19.B5       net (fanout=2)     e  2.547   MandelbrotGen0/Mmult_n0085_Madd_110270
+    SLICE_X5Y19.COUT     Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_lut<51>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.CIN      net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd245_cy<53>
+    SLICE_X5Y20.BMUX     Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd245_cy<57>
+    SLICE_X74Y88.B6      net (fanout=1)     e  2.713   MandelbrotGen0/Mmult_n0085_Madd_114250
+    SLICE_X74Y88.COUT    Topcyb                0.499   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_lut<55>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<57>
+    SLICE_X74Y89.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<61>
+    SLICE_X74Y90.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<65>
+    SLICE_X74Y91.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<69>
+    SLICE_X74Y92.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<73>
+    SLICE_X74Y93.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<77>
+    SLICE_X74Y94.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<81>
+    SLICE_X74Y95.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<85>
+    SLICE_X74Y96.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<89>
+    SLICE_X74Y97.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<93>
+    SLICE_X74Y98.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<97>
+    SLICE_X74Y99.COUT    Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<101>
+    SLICE_X74Y100.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<105>
+    SLICE_X74Y101.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<109>
+    SLICE_X74Y102.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<113>
+    SLICE_X74Y103.COUT   Tbyp                  0.092   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd250_cy<117>
+    SLICE_X74Y104.BMUX   Tcinb                 0.342   MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+                                                       MandelbrotGen0/Mmult_n0085_Madd250_cy<121>
+    SLICE_X11Y59.B5      net (fanout=2)     e  2.352   MandelbrotGen0/Mmult_n0085_Madd_178250
+    SLICE_X11Y59.COUT    Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_lut<178>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<180>
+    SLICE_X11Y60.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<184>
+    SLICE_X11Y61.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<188>
+    SLICE_X11Y62.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<192>
+    SLICE_X11Y63.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<196>
+    SLICE_X11Y64.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<200>
+    SLICE_X11Y65.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<204>
+    SLICE_X11Y66.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<208>
+    SLICE_X11Y67.COUT    Tbyp                  0.089   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd253_cy<212>
+    SLICE_X11Y68.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd253_cy<216>
+    SLICE_X57Y150.B6     net (fanout=1)     e  2.342   MandelbrotGen0/Mmult_n0085_Madd_214258
+    SLICE_X57Y150.COUT   Topcyb                0.509   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_lut<214>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.CIN    net (fanout=1)     e  0.000   MandelbrotGen0/Mmult_n0085_Madd254_cy<216>
+    SLICE_X57Y151.BMUX   Tcinb                 0.358   MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+                                                       MandelbrotGen0/Mmult_n0085_Madd254_cy<220>
+    SLICE_X48Y83.B6      net (fanout=2)     e  1.611   MandelbrotGen0/n0085<218>
+    SLICE_X48Y83.COUT    Topcyb                0.509   MandelbrotGen0/Z_im<220>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_lut<218>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<220>
+    SLICE_X48Y84.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<220>
+    SLICE_X48Y84.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<224>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<224>
+    SLICE_X48Y85.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<228>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<228>
+    SLICE_X48Y86.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<232>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<232>
+    SLICE_X48Y87.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<236>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<236>
+    SLICE_X48Y88.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<240>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<240>
+    SLICE_X48Y89.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<244>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<244>
+    SLICE_X48Y90.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<248>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<248>
+    SLICE_X48Y91.COUT    Tbyp                  0.089   MandelbrotGen0/Z_im<252>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CIN     net (fanout=1)     e  0.000   MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_cy<252>
+    SLICE_X48Y92.CLK     Tcinck                0.103   MandelbrotGen0/Z_im<255>
+                                                       MandelbrotGen0/Madd_Z_re[254]_C_im[11]_add_13_OUT_xor<255>
+                                                       MandelbrotGen0/Z_im_253
+    -------------------------------------------------  ---------------------------
+    Total                                     31.000ns (10.821ns logic, 20.179ns route)
+                                                       (34.9% logic, 65.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "Clk_100M_BUFGP/IBUFG" PERIOD = 10 ns HIGH 5 ns;
+--------------------------------------------------------------------------------
+
+Paths for end point best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram (RAMB36_X3Y18.DIADI3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      -0.145ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               MandelbrotGen0/dinA_6 (FF)
+  Destination:          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      -0.145ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 10.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: MandelbrotGen0/dinA_6 to best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X81Y93.BQ         Tcko                  0.274   dinA<4>
+                                                          MandelbrotGen0/dinA_6
+    RAMB36_X3Y18.DIADI3     net (fanout=75)    e  0.174   dinA<6>
+    RAMB36_X3Y18.CLKARDCLKU Trckd_DIA   (-Th)     0.593   best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+                                                          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                        -0.145ns (-0.319ns logic, 0.174ns route)
+                                                          (220.0% logic, -120.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram (RAMB36_X3Y18.DIADI5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      -0.010ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               MandelbrotGen0/dinA_8 (FF)
+  Destination:          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      -0.010ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 10.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: MandelbrotGen0/dinA_8 to best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X79Y93.DQ         Tcko                  0.274   dinA<8>
+                                                          MandelbrotGen0/dinA_8
+    RAMB36_X3Y18.DIADI5     net (fanout=75)    e  0.309   dinA<8>
+    RAMB36_X3Y18.CLKARDCLKU Trckd_DIA   (-Th)     0.593   best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+                                                          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                        -0.010ns (-0.319ns logic, 0.309ns route)
+                                                          (3190.0% logic, -3090.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram (RAMB36_X3Y18.DIADI7), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.014ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               MandelbrotGen0/dinA_10 (FF)
+  Destination:          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.014ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         Clk_100M_BUFGP rising at 10.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: MandelbrotGen0/dinA_10 to best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X79Y93.BQ         Tcko                  0.274   dinA<8>
+                                                          MandelbrotGen0/dinA_10
+    RAMB36_X3Y18.DIADI7     net (fanout=75)    e  0.333   dinA<10>
+    RAMB36_X3Y18.CLKARDCLKU Trckd_DIA   (-Th)     0.593   best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+                                                          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[54].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.014ns (-0.319ns logic, 0.333ns route)
+                                                          (-2278.6% logic, 2378.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "Clk_100M_BUFGP/IBUFG" PERIOD = 10 ns HIGH 5 ns;
+--------------------------------------------------------------------------------
+Slack: 7.859ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKA)
+  Physical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKARDCLKL
+  Logical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKARDCLKL
+  Location pin: RAMB36_X1Y27.CLKARDCLKL
+  Clock network: Clk_100M_BUFGP
+--------------------------------------------------------------------------------
+Slack: 7.859ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLK_WF_NC(FMAX_CAS_WF_NC))
+  Physical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKARDCLKU
+  Logical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKARDCLKU
+  Location pin: RAMB36_X1Y27.CLKARDCLKU
+  Clock network: Clk_100M_BUFGP
+--------------------------------------------------------------------------------
+Slack: 7.859ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKB)
+  Physical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLKL
+  Logical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLKL
+  Location pin: RAMB36_X1Y27.CLKBWRCLKL
+  Clock network: Clk_100M_BUFGP
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock Clk_100M
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_100M       |   31.106|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 5027  Score: 45090508  (Setup/Max: 45090353, Hold: 155)
+
+Constraints cover 265608266446177894400 paths, 0 nets, and 227424 connections
+
+Design statistics:
+   Minimum period:  31.106ns{1}   (Maximum frequency:  32.148MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed May 11 15:46:37 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 1959 MB
+
+
+

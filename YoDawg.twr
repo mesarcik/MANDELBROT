@@ -1,0 +1,765 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf
+YoDawg.ucf
+
+Design file:              YoDawg.ncd
+Physical constraint file: YoDawg.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "Clk_100M_BUFGP/IBUFG" PERIOD = 10 ns HIGH 5 ns;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 499018842 paths analyzed, 8169 endpoints analyzed, 148 failing endpoints
+ 148 timing errors detected. (148 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  10.436ns.
+--------------------------------------------------------------------------------
+
+Paths for end point MandelbrotGen0/x_count_1 (SLICE_X28Y142.A6), 3361454 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.436ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/shift_val_3 (FF)
+  Destination:          MandelbrotGen0/x_count_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.304ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.097ns (0.577 - 0.674)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/shift_val_3 to MandelbrotGen0/x_count_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y130.DQ      Tcko                  0.341   MandelbrotGen0/shift_val<3>
+                                                       MandelbrotGen0/shift_val_3
+    SLICE_X0Y133.A1      net (fanout=5)        0.739   MandelbrotGen0/shift_val<3>
+    SLICE_X0Y133.COUT    Topcya                0.492   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<8>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.CIN     net (fanout=1)        0.000   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+    SLICE_X4Y136.C5      net (fanout=5)        0.451   MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>
+    SLICE_X4Y136.CMUX    Tilo                  0.415   MandelbrotGen0/C_real_start<17>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4_G
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4
+    SLICE_X9Y136.A6      net (fanout=1)        0.473   N171
+    SLICE_X9Y136.A       Tilo                  0.097   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1491
+    DSP48_X0Y53.A12      net (fanout=4)        0.498   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+    DSP48_X0Y53.P14      Tdspdo_A_P_MULT       2.823   MandelbrotGen0/Mmult_n0251
+                                                       MandelbrotGen0/Mmult_n0251
+    SLICE_X13Y133.A6     net (fanout=4)        0.484   MandelbrotGen0/n0251<14>
+    SLICE_X13Y133.COUT   Topcya                0.492   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<0>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.COUT   Tbyp                  0.089   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.DMUX   Tcind                 0.371   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+    SLICE_X15Y136.D1     net (fanout=1)        0.597   MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<11>
+    SLICE_X15Y136.D      Tilo                  0.097   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B3     net (fanout=3)        0.583   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B      Tilo                  0.097   MandelbrotGen0/C_real<3>
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7
+    SLICE_X28Y142.A6     net (fanout=111)      0.740   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o
+    SLICE_X28Y142.CLK    Tas                   0.067   MandelbrotGen0/x_count<4>
+                                                       MandelbrotGen0/Mmux_x_count[9]_x_count[9]_mux_106_OUT21
+                                                       MandelbrotGen0/x_count_1
+    -------------------------------------------------  ---------------------------
+    Total                                     10.304ns (5.739ns logic, 4.565ns route)
+                                                       (55.7% logic, 44.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.428ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/shift_val_3 (FF)
+  Destination:          MandelbrotGen0/x_count_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.296ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.097ns (0.577 - 0.674)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/shift_val_3 to MandelbrotGen0/x_count_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y130.DQ      Tcko                  0.341   MandelbrotGen0/shift_val<3>
+                                                       MandelbrotGen0/shift_val_3
+    SLICE_X0Y133.A1      net (fanout=5)        0.739   MandelbrotGen0/shift_val<3>
+    SLICE_X0Y133.COUT    Topcya                0.492   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<8>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.CIN     net (fanout=1)        0.000   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+    SLICE_X4Y136.C5      net (fanout=5)        0.451   MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>
+    SLICE_X4Y136.CMUX    Tilo                  0.415   MandelbrotGen0/C_real_start<17>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4_G
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4
+    SLICE_X9Y136.A6      net (fanout=1)        0.473   N171
+    SLICE_X9Y136.A       Tilo                  0.097   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1491
+    DSP48_X0Y53.A12      net (fanout=4)        0.498   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+    DSP48_X0Y53.P15      Tdspdo_A_P_MULT       2.823   MandelbrotGen0/Mmult_n0251
+                                                       MandelbrotGen0/Mmult_n0251
+    SLICE_X13Y133.B6     net (fanout=3)        0.459   MandelbrotGen0/n0251<15>
+    SLICE_X13Y133.COUT   Topcyb                0.509   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<1>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.COUT   Tbyp                  0.089   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.DMUX   Tcind                 0.371   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+    SLICE_X15Y136.D1     net (fanout=1)        0.597   MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<11>
+    SLICE_X15Y136.D      Tilo                  0.097   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B3     net (fanout=3)        0.583   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B      Tilo                  0.097   MandelbrotGen0/C_real<3>
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7
+    SLICE_X28Y142.A6     net (fanout=111)      0.740   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o
+    SLICE_X28Y142.CLK    Tas                   0.067   MandelbrotGen0/x_count<4>
+                                                       MandelbrotGen0/Mmux_x_count[9]_x_count[9]_mux_106_OUT21
+                                                       MandelbrotGen0/x_count_1
+    -------------------------------------------------  ---------------------------
+    Total                                     10.296ns (5.756ns logic, 4.540ns route)
+                                                       (55.9% logic, 44.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.360ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/shift_val_3 (FF)
+  Destination:          MandelbrotGen0/x_count_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.228ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.097ns (0.577 - 0.674)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/shift_val_3 to MandelbrotGen0/x_count_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y130.DQ      Tcko                  0.341   MandelbrotGen0/shift_val<3>
+                                                       MandelbrotGen0/shift_val_3
+    SLICE_X0Y133.A1      net (fanout=5)        0.739   MandelbrotGen0/shift_val<3>
+    SLICE_X0Y133.COUT    Topcya                0.492   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<8>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.CIN     net (fanout=1)        0.000   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+    SLICE_X4Y136.C5      net (fanout=5)        0.451   MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>
+    SLICE_X4Y136.CMUX    Tilo                  0.415   MandelbrotGen0/C_real_start<17>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4_G
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4
+    SLICE_X9Y136.A6      net (fanout=1)        0.473   N171
+    SLICE_X9Y136.A       Tilo                  0.097   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1491
+    DSP48_X0Y53.A12      net (fanout=4)        0.498   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+    DSP48_X0Y53.P20      Tdspdo_A_P_MULT       2.823   MandelbrotGen0/Mmult_n0251
+                                                       MandelbrotGen0/Mmult_n0251
+    SLICE_X13Y134.C6     net (fanout=3)        0.591   MandelbrotGen0/n0251<20>
+    SLICE_X13Y134.COUT   Topcyc                0.398   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<6>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.DMUX   Tcind                 0.371   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+    SLICE_X15Y136.D1     net (fanout=1)        0.597   MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<11>
+    SLICE_X15Y136.D      Tilo                  0.097   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B3     net (fanout=3)        0.583   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B      Tilo                  0.097   MandelbrotGen0/C_real<3>
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7
+    SLICE_X28Y142.A6     net (fanout=111)      0.740   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o
+    SLICE_X28Y142.CLK    Tas                   0.067   MandelbrotGen0/x_count<4>
+                                                       MandelbrotGen0/Mmux_x_count[9]_x_count[9]_mux_106_OUT21
+                                                       MandelbrotGen0/x_count_1
+    -------------------------------------------------  ---------------------------
+    Total                                     10.228ns (5.556ns logic, 4.672ns route)
+                                                       (54.3% logic, 45.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MandelbrotGen0/x_count_6 (SLICE_X28Y142.B6), 3361454 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.434ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/shift_val_3 (FF)
+  Destination:          MandelbrotGen0/x_count_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.302ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.097ns (0.577 - 0.674)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/shift_val_3 to MandelbrotGen0/x_count_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y130.DQ      Tcko                  0.341   MandelbrotGen0/shift_val<3>
+                                                       MandelbrotGen0/shift_val_3
+    SLICE_X0Y133.A1      net (fanout=5)        0.739   MandelbrotGen0/shift_val<3>
+    SLICE_X0Y133.COUT    Topcya                0.492   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<8>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.CIN     net (fanout=1)        0.000   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+    SLICE_X4Y136.C5      net (fanout=5)        0.451   MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>
+    SLICE_X4Y136.CMUX    Tilo                  0.415   MandelbrotGen0/C_real_start<17>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4_G
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4
+    SLICE_X9Y136.A6      net (fanout=1)        0.473   N171
+    SLICE_X9Y136.A       Tilo                  0.097   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1491
+    DSP48_X0Y53.A12      net (fanout=4)        0.498   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+    DSP48_X0Y53.P14      Tdspdo_A_P_MULT       2.823   MandelbrotGen0/Mmult_n0251
+                                                       MandelbrotGen0/Mmult_n0251
+    SLICE_X13Y133.A6     net (fanout=4)        0.484   MandelbrotGen0/n0251<14>
+    SLICE_X13Y133.COUT   Topcya                0.492   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<0>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.COUT   Tbyp                  0.089   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.DMUX   Tcind                 0.371   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+    SLICE_X15Y136.D1     net (fanout=1)        0.597   MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<11>
+    SLICE_X15Y136.D      Tilo                  0.097   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B3     net (fanout=3)        0.583   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B      Tilo                  0.097   MandelbrotGen0/C_real<3>
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7
+    SLICE_X28Y142.B6     net (fanout=111)      0.740   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o
+    SLICE_X28Y142.CLK    Tas                   0.065   MandelbrotGen0/x_count<4>
+                                                       MandelbrotGen0/Mmux_x_count[9]_x_count[9]_mux_106_OUT71
+                                                       MandelbrotGen0/x_count_6
+    -------------------------------------------------  ---------------------------
+    Total                                     10.302ns (5.737ns logic, 4.565ns route)
+                                                       (55.7% logic, 44.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.426ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/shift_val_3 (FF)
+  Destination:          MandelbrotGen0/x_count_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.294ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.097ns (0.577 - 0.674)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/shift_val_3 to MandelbrotGen0/x_count_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y130.DQ      Tcko                  0.341   MandelbrotGen0/shift_val<3>
+                                                       MandelbrotGen0/shift_val_3
+    SLICE_X0Y133.A1      net (fanout=5)        0.739   MandelbrotGen0/shift_val<3>
+    SLICE_X0Y133.COUT    Topcya                0.492   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<8>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.CIN     net (fanout=1)        0.000   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+    SLICE_X4Y136.C5      net (fanout=5)        0.451   MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>
+    SLICE_X4Y136.CMUX    Tilo                  0.415   MandelbrotGen0/C_real_start<17>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4_G
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4
+    SLICE_X9Y136.A6      net (fanout=1)        0.473   N171
+    SLICE_X9Y136.A       Tilo                  0.097   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1491
+    DSP48_X0Y53.A12      net (fanout=4)        0.498   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+    DSP48_X0Y53.P15      Tdspdo_A_P_MULT       2.823   MandelbrotGen0/Mmult_n0251
+                                                       MandelbrotGen0/Mmult_n0251
+    SLICE_X13Y133.B6     net (fanout=3)        0.459   MandelbrotGen0/n0251<15>
+    SLICE_X13Y133.COUT   Topcyb                0.509   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<1>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.COUT   Tbyp                  0.089   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.DMUX   Tcind                 0.371   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+    SLICE_X15Y136.D1     net (fanout=1)        0.597   MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<11>
+    SLICE_X15Y136.D      Tilo                  0.097   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B3     net (fanout=3)        0.583   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B      Tilo                  0.097   MandelbrotGen0/C_real<3>
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7
+    SLICE_X28Y142.B6     net (fanout=111)      0.740   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o
+    SLICE_X28Y142.CLK    Tas                   0.065   MandelbrotGen0/x_count<4>
+                                                       MandelbrotGen0/Mmux_x_count[9]_x_count[9]_mux_106_OUT71
+                                                       MandelbrotGen0/x_count_6
+    -------------------------------------------------  ---------------------------
+    Total                                     10.294ns (5.754ns logic, 4.540ns route)
+                                                       (55.9% logic, 44.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.358ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/shift_val_3 (FF)
+  Destination:          MandelbrotGen0/x_count_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.226ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.097ns (0.577 - 0.674)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/shift_val_3 to MandelbrotGen0/x_count_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y130.DQ      Tcko                  0.341   MandelbrotGen0/shift_val<3>
+                                                       MandelbrotGen0/shift_val_3
+    SLICE_X0Y133.A1      net (fanout=5)        0.739   MandelbrotGen0/shift_val<3>
+    SLICE_X0Y133.COUT    Topcya                0.492   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<8>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.CIN     net (fanout=1)        0.000   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+    SLICE_X4Y136.C5      net (fanout=5)        0.451   MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>
+    SLICE_X4Y136.CMUX    Tilo                  0.415   MandelbrotGen0/C_real_start<17>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4_G
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4
+    SLICE_X9Y136.A6      net (fanout=1)        0.473   N171
+    SLICE_X9Y136.A       Tilo                  0.097   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1491
+    DSP48_X0Y53.A12      net (fanout=4)        0.498   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+    DSP48_X0Y53.P20      Tdspdo_A_P_MULT       2.823   MandelbrotGen0/Mmult_n0251
+                                                       MandelbrotGen0/Mmult_n0251
+    SLICE_X13Y134.C6     net (fanout=3)        0.591   MandelbrotGen0/n0251<20>
+    SLICE_X13Y134.COUT   Topcyc                0.398   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<6>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.DMUX   Tcind                 0.371   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+    SLICE_X15Y136.D1     net (fanout=1)        0.597   MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<11>
+    SLICE_X15Y136.D      Tilo                  0.097   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B3     net (fanout=3)        0.583   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B      Tilo                  0.097   MandelbrotGen0/C_real<3>
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7
+    SLICE_X28Y142.B6     net (fanout=111)      0.740   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o
+    SLICE_X28Y142.CLK    Tas                   0.065   MandelbrotGen0/x_count<4>
+                                                       MandelbrotGen0/Mmux_x_count[9]_x_count[9]_mux_106_OUT71
+                                                       MandelbrotGen0/x_count_6
+    -------------------------------------------------  ---------------------------
+    Total                                     10.226ns (5.554ns logic, 4.672ns route)
+                                                       (54.3% logic, 45.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point MandelbrotGen0/x_count_5 (SLICE_X29Y142.A6), 3361454 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.422ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/shift_val_3 (FF)
+  Destination:          MandelbrotGen0/x_count_5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.290ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.097ns (0.577 - 0.674)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/shift_val_3 to MandelbrotGen0/x_count_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y130.DQ      Tcko                  0.341   MandelbrotGen0/shift_val<3>
+                                                       MandelbrotGen0/shift_val_3
+    SLICE_X0Y133.A1      net (fanout=5)        0.739   MandelbrotGen0/shift_val<3>
+    SLICE_X0Y133.COUT    Topcya                0.492   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<8>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.CIN     net (fanout=1)        0.000   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+    SLICE_X4Y136.C5      net (fanout=5)        0.451   MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>
+    SLICE_X4Y136.CMUX    Tilo                  0.415   MandelbrotGen0/C_real_start<17>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4_G
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4
+    SLICE_X9Y136.A6      net (fanout=1)        0.473   N171
+    SLICE_X9Y136.A       Tilo                  0.097   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1491
+    DSP48_X0Y53.A12      net (fanout=4)        0.498   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+    DSP48_X0Y53.P14      Tdspdo_A_P_MULT       2.823   MandelbrotGen0/Mmult_n0251
+                                                       MandelbrotGen0/Mmult_n0251
+    SLICE_X13Y133.A6     net (fanout=4)        0.484   MandelbrotGen0/n0251<14>
+    SLICE_X13Y133.COUT   Topcya                0.492   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<0>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.COUT   Tbyp                  0.089   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.DMUX   Tcind                 0.371   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+    SLICE_X15Y136.D1     net (fanout=1)        0.597   MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<11>
+    SLICE_X15Y136.D      Tilo                  0.097   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B3     net (fanout=3)        0.583   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B      Tilo                  0.097   MandelbrotGen0/C_real<3>
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7
+    SLICE_X29Y142.A6     net (fanout=111)      0.726   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o
+    SLICE_X29Y142.CLK    Tas                   0.067   MandelbrotGen0/x_count<8>
+                                                       MandelbrotGen0/Mmux_x_count[9]_x_count[9]_mux_106_OUT61
+                                                       MandelbrotGen0/x_count_5
+    -------------------------------------------------  ---------------------------
+    Total                                     10.290ns (5.739ns logic, 4.551ns route)
+                                                       (55.8% logic, 44.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.414ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/shift_val_3 (FF)
+  Destination:          MandelbrotGen0/x_count_5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.282ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.097ns (0.577 - 0.674)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/shift_val_3 to MandelbrotGen0/x_count_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y130.DQ      Tcko                  0.341   MandelbrotGen0/shift_val<3>
+                                                       MandelbrotGen0/shift_val_3
+    SLICE_X0Y133.A1      net (fanout=5)        0.739   MandelbrotGen0/shift_val<3>
+    SLICE_X0Y133.COUT    Topcya                0.492   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<8>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.CIN     net (fanout=1)        0.000   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+    SLICE_X4Y136.C5      net (fanout=5)        0.451   MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>
+    SLICE_X4Y136.CMUX    Tilo                  0.415   MandelbrotGen0/C_real_start<17>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4_G
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4
+    SLICE_X9Y136.A6      net (fanout=1)        0.473   N171
+    SLICE_X9Y136.A       Tilo                  0.097   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1491
+    DSP48_X0Y53.A12      net (fanout=4)        0.498   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+    DSP48_X0Y53.P15      Tdspdo_A_P_MULT       2.823   MandelbrotGen0/Mmult_n0251
+                                                       MandelbrotGen0/Mmult_n0251
+    SLICE_X13Y133.B6     net (fanout=3)        0.459   MandelbrotGen0/n0251<15>
+    SLICE_X13Y133.COUT   Topcyb                0.509   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<1>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<3>
+    SLICE_X13Y134.COUT   Tbyp                  0.089   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.DMUX   Tcind                 0.371   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+    SLICE_X15Y136.D1     net (fanout=1)        0.597   MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<11>
+    SLICE_X15Y136.D      Tilo                  0.097   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B3     net (fanout=3)        0.583   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B      Tilo                  0.097   MandelbrotGen0/C_real<3>
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7
+    SLICE_X29Y142.A6     net (fanout=111)      0.726   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o
+    SLICE_X29Y142.CLK    Tas                   0.067   MandelbrotGen0/x_count<8>
+                                                       MandelbrotGen0/Mmux_x_count[9]_x_count[9]_mux_106_OUT61
+                                                       MandelbrotGen0/x_count_5
+    -------------------------------------------------  ---------------------------
+    Total                                     10.282ns (5.756ns logic, 4.526ns route)
+                                                       (56.0% logic, 44.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.346ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               MandelbrotGen0/shift_val_3 (FF)
+  Destination:          MandelbrotGen0/x_count_5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      10.214ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.097ns (0.577 - 0.674)
+  Source Clock:         Clk_100M_BUFGP rising at 0.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: MandelbrotGen0/shift_val_3 to MandelbrotGen0/x_count_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y130.DQ      Tcko                  0.341   MandelbrotGen0/shift_val<3>
+                                                       MandelbrotGen0/shift_val_3
+    SLICE_X0Y133.A1      net (fanout=5)        0.739   MandelbrotGen0/shift_val<3>
+    SLICE_X0Y133.COUT    Topcya                0.492   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_lut<8>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.CIN     net (fanout=1)        0.000   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<11>
+    SLICE_X0Y134.BMUX    Tcinb                 0.358   MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+                                                       MandelbrotGen0/Mmux_C_real_start[17]_C_real_start[17]_mux_12_OUT_rs_cy<15>
+    SLICE_X4Y136.C5      net (fanout=5)        0.451   MandelbrotGen0/C_real_start[17]_C_real_start[17]_mux_12_OUT<13>
+    SLICE_X4Y136.CMUX    Tilo                  0.415   MandelbrotGen0/C_real_start<17>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4_G
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT14911_SW4
+    SLICE_X9Y136.A6      net (fanout=1)        0.473   N171
+    SLICE_X9Y136.A       Tilo                  0.097   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+                                                       MandelbrotGen0/Mmux_C_imag_start[17]_GND_2_o_mux_46_OUT1491
+    DSP48_X0Y53.A12      net (fanout=4)        0.498   MandelbrotGen0/Z_real[17]_PWR_2_o_mux_47_OUT<12>
+    DSP48_X0Y53.P20      Tdspdo_A_P_MULT       2.823   MandelbrotGen0/Mmult_n0251
+                                                       MandelbrotGen0/Mmult_n0251
+    SLICE_X13Y134.C6     net (fanout=3)        0.591   MandelbrotGen0/n0251<20>
+    SLICE_X13Y134.COUT   Topcyc                0.398   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_lut<6>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.CIN    net (fanout=1)        0.000   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<7>
+    SLICE_X13Y135.DMUX   Tcind                 0.371   MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+                                                       MandelbrotGen0/Madd_Z_real[17]_Z_imag[17]_add_54_OUT_cy<11>
+    SLICE_X15Y136.D1     net (fanout=1)        0.597   MandelbrotGen0/Z_real[17]_Z_imag[17]_add_54_OUT<11>
+    SLICE_X15Y136.D      Tilo                  0.097   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B3     net (fanout=3)        0.583   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o4
+    SLICE_X28Y138.B      Tilo                  0.097   MandelbrotGen0/C_real<3>
+                                                       MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o7
+    SLICE_X29Y142.A6     net (fanout=111)      0.726   MandelbrotGen0/Z_real[17]_GND_2_o_OR_37_o
+    SLICE_X29Y142.CLK    Tas                   0.067   MandelbrotGen0/x_count<8>
+                                                       MandelbrotGen0/Mmux_x_count[9]_x_count[9]_mux_106_OUT61
+                                                       MandelbrotGen0/x_count_5
+    -------------------------------------------------  ---------------------------
+    Total                                     10.214ns (5.556ns logic, 4.658ns route)
+                                                       (54.4% logic, 45.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "Clk_100M_BUFGP/IBUFG" PERIOD = 10 ns HIGH 5 ns;
+--------------------------------------------------------------------------------
+
+Paths for end point best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B (RAMB36_X0Y31.DIADI0), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.045ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               MandelbrotGen0/dinA_2 (FF)
+  Destination:          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.437ns (Levels of Logic = 0)
+  Clock Path Skew:      0.392ns (0.906 - 0.514)
+  Source Clock:         Clk_100M_BUFGP rising at 10.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MandelbrotGen0/dinA_2 to best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X29Y138.BQ        Tcko                  0.141   MandelbrotGen0/dinA<4>
+                                                          MandelbrotGen0/dinA_2
+    RAMB36_X0Y31.DIADI0     net (fanout=20)       0.592   MandelbrotGen0/dinA<2>
+    RAMB36_X0Y31.CLKARDCLKL Trckd_DIA   (-Th)     0.296   best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B
+                                                          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.437ns (-0.155ns logic, 0.592ns route)
+                                                          (-35.5% logic, 135.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B (RAMB36_X0Y31.DIADI1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.045ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               MandelbrotGen0/dinA_2 (FF)
+  Destination:          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.437ns (Levels of Logic = 0)
+  Clock Path Skew:      0.392ns (0.906 - 0.514)
+  Source Clock:         Clk_100M_BUFGP rising at 10.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MandelbrotGen0/dinA_2 to best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X29Y138.BQ        Tcko                  0.141   MandelbrotGen0/dinA<4>
+                                                          MandelbrotGen0/dinA_2
+    RAMB36_X0Y31.DIADI1     net (fanout=20)       0.592   MandelbrotGen0/dinA<2>
+    RAMB36_X0Y31.CLKARDCLKU Trckd_DIA   (-Th)     0.296   best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B
+                                                          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.437ns (-0.155ns logic, 0.592ns route)
+                                                          (-35.5% logic, 135.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram (RAMB36_X0Y30.ADDRARDADDRU12), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.082ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               MandelbrotGen0/addrA_11 (FF)
+  Destination:          best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.474ns (Levels of Logic = 0)
+  Clock Path Skew:      0.392ns (0.907 - 0.515)
+  Source Clock:         Clk_100M_BUFGP rising at 10.000ns
+  Destination Clock:    Clk_100M_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: MandelbrotGen0/addrA_11 to best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+    Location                    Delay type         Delay(ns)  Physical Resource
+                                                              Logical Resource(s)
+    --------------------------------------------------------  -------------------
+    SLICE_X29Y140.DQ            Tcko                  0.141   MandelbrotGen0/addrA<11>
+                                                              MandelbrotGen0/addrA_11
+    RAMB36_X0Y30.ADDRARDADDRU12 net (fanout=209)      0.516   MandelbrotGen0/addrA<11>
+    RAMB36_X0Y30.CLKARDCLKU     Trckc_ADDRA (-Th)     0.183   best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+                                                              best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.ram
+    --------------------------------------------------------  ---------------------------
+    Total                                             0.474ns (-0.042ns logic, 0.516ns route)
+                                                              (-8.9% logic, 108.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "Clk_100M_BUFGP/IBUFG" PERIOD = 10 ns HIGH 5 ns;
+--------------------------------------------------------------------------------
+Slack: 7.859ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKA)
+  Physical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKARDCLKL
+  Logical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKARDCLKL
+  Location pin: RAMB36_X1Y31.CLKARDCLKL
+  Clock network: Clk_100M_BUFGP
+--------------------------------------------------------------------------------
+Slack: 7.859ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLK_WF_NC(FMAX_CAS_WF_NC))
+  Physical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKARDCLKU
+  Logical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKARDCLKU
+  Location pin: RAMB36_X1Y31.CLKARDCLKU
+  Clock network: Clk_100M_BUFGP
+--------------------------------------------------------------------------------
+Slack: 7.859ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKB)
+  Physical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLKL
+  Logical resource: best_ram_eva0/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/CLKBWRCLKL
+  Location pin: RAMB36_X1Y31.CLKBWRCLKL
+  Clock network: Clk_100M_BUFGP
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock Clk_100M
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_100M       |   10.436|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 148  Score: 34816  (Setup/Max: 34816, Hold: 0)
+
+Constraints cover 499018842 paths, 0 nets, and 12493 connections
+
+Design statistics:
+   Minimum period:  10.436ns{1}   (Maximum frequency:  95.822MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon May 23 20:12:40 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 692 MB
+
+
+

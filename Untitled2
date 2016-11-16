@@ -1,0 +1,114 @@
+
+module MandelbrotGen(
+		input Clk_100M,
+		output reg [18:0] addrA,
+		output reg [11:0] dinA,
+		output reg wea
+    );
+	
+ 
+	
+reg [10:0] C_re = 11'b000_00000000; // real value of first x coordinate
+reg [10:0] re_factor = 11'b000_00000001; //  scaling faactor C_re = C_re + re_factor(x_coordinate) -- decimal point @ 9th place
+reg [10:0] im_factor = 11'b000_00000001; // scaling faactor C_im = C_im + im_factor(y_coordinate) -- decimal point @ 9th place
+reg [10:0] C_im = 11'b000_00000000; // 0.935546875 imaginary value of first y coordinate
+reg [7:0] p_dec_point = 8; //holds decimal place value for C
+reg [7:0] p_dec_pointNew = 8; //holds decimal place value for Z  
+reg [11:0] iterations = 0;
+reg [10:0] Z_re = 0; 
+reg [10:0] Z_im = 0;
+//not sure if three most significant bits get truncated
+reg [21:0] T_Z_re2 = 0; //place holders for the squared value.
+reg [21:0] T_Z_im2 = 0; // place holders for the squared value.
+reg [21:0] tT_Z_im_re = 0; // place holders for the squared value.
+reg [10:0] tZ_im_re = 0; // place holders for the squared value.
+reg [10:0] Z_re2 = 0; //place holders for the squared value.
+reg [10:0] Z_im2 = 0; // place holders for the squared value.
+reg [21:0] temp = 0;
+reg calculating = 1; 
+reg ce =0;
+reg [10:0] a =0;
+reg [10:0] b =0;
+wire [21:0] p = 0;
+
+reg Count=0;
+multiplier m1_11x11(Clk_100M, ce, a, b, p);
+
+always @(posedge Clk_100M) begin
+	if (&Count) begin
+
+	if (addrA > 307199) begin
+		addrA<=0;
+		C_im <= 10'b0000000_000;
+		C_re <= 10'b0000000_000;
+	end
+	else begin
+		if ((calculating == 1))  begin
+		/////
+		ce <=1;
+		if (ce ==1) begin 
+				a<= Z_re;
+				b<= Z_re;
+				T_Z_re2 <= p;
+				ce <=0;
+				Z_re2 <= T_Z_re2[18:7];
+		end 
+//		if (ce ==1) begin 
+//				a<= Z_im;
+//				b<= Z_im;
+//				T_Z_im2 <= p;
+//				ce <=0;
+//		end
+			//////////////
+			Z_im2 <= T_Z_im2[18:7];
+			if (((Z_re2 + Z_im2) > (4<<p_dec_pointNew)) || (iterations == 4095)) begin // shift to the right to drop decimal (may lose resolution, but can fix it l8er)
+					calculating <= 0;
+					wea <= 1;
+										
+					dinA <= iterations;
+			
+					//dinA <= iterations;			
+					
+					//p_dec_pointNew<=p_dec_point;//reseting decimal position.
+					Z_re2 <=0;
+					Z_im2<=0;
+					Z_im<=0;
+					Z_re<=0;
+			end else begin
+					//////////
+				//	ce <=1;
+					//a<= Z_re;
+					//b<= Z_im;
+					//temp <= p;
+					//ce <=0;
+					//temp <= temp <<1;
+					//tT_Z_im_re <= temp;
+					//////////
+					
+	
+					Z_im <= tT_Z_im_re[18:7] + C_im; //yNew = (2*xT*yT) + yC;
+					Z_re <= Z_re2 - Z_im2 + C_re;// xNew = (xT^2 - yT^2) + xC;
+					iterations <= iterations + 1'b1;		
+					//p_dec_pointNew <= (p_dec_pointNew)<<1;// binary multiplication of the same number yeilds in a 2x shift in dec.point
+			end
+			
+		end else if   ((calculating == 0))  begin
+			wea <=0;
+			C_re <= C_re + re_factor; //increment x coordinate by 1/256 /////////THIS WAS CHANGED FROM + to -
+			if (C_re == 11'b010_01111111) begin
+				C_im <= C_im + im_factor;
+				C_re<= 11'b000_00000000;
+					
+				if (C_im == 11'b001_11011111) begin // goes 1 past end of frame
+					C_im <= 11'b000_00000000;
+				end
+			end
+				addrA <= addrA +1'b1;
+				calculating <=1;
+				iterations <= 0;
+		end	
+	end 
+	Count <=0;
+	end else Count <= Count+ 1;
+end 
+endmodule

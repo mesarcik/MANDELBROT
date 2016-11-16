@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/bluelabuser/YODA_14-May_save/MandelbrotTest_isim_beh.exe" -prj "/home/bluelabuser/YODA_14-May_save/MandelbrotTest_beh.prj" "work.MandelbrotTest" "work.glbl" 

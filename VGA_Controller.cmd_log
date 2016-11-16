@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/bluelabuser/MSRMIC004/YODA/VGA_Controller.xst" -ofn "/home/bluelabuser/MSRMIC004/YODA/VGA_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 VGA_Controller.ngc VGA_Controller.ngd  

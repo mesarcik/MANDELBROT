@@ -1,0 +1,14 @@
+# Output products list for <signed_multiplier>
+_xmsgs/pn_parser.xmsgs
+signed_multiplier/doc/mult_gen_ds255.pdf
+signed_multiplier/doc/mult_gen_v11_2_readme.txt
+signed_multiplier/doc/mult_gen_v11_2_vinfo.html
+signed_multiplier.asy
+signed_multiplier.gise
+signed_multiplier.ngc
+signed_multiplier.v
+signed_multiplier.veo
+signed_multiplier.xco
+signed_multiplier.xise
+signed_multiplier_flist.txt
+signed_multiplier_xmdf.tcl

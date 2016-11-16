@@ -1,0 +1,10 @@
+Welcome to Xilinx CORE Generator.
+Help system initialized.
+The IP Catalog has been reloaded.
+Opening project file
+/home/bluelabuser/Desktop/YODA_19-04/ipcore_dir/coregen.cgp.
+Customize and GenerateINFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Cancelled executing Tcl generator.
+Closed project file.

@@ -1,0 +1,28 @@
+Command line:
+   MandelbrotTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58741
+
+Sun May 15 21:43:02 2016
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 239.264 Meg
+
+ Total Signals          : 17
+ Total Nets             : 46
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 38
+ Total Scalar Nets and Variables : 354
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 314.765 Meg
+
+Sun May 15 21:48:39 2016
+

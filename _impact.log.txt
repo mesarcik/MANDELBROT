@@ -1,0 +1,430 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Fri May  6 13:14:23 2016
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Nexys4", SN:210274593040
+INFO:iMPACT - Digilent Plugin: User Name: Nexys4
+INFO:iMPACT - Digilent Plugin: Product Name: Digilent Nexys4
+INFO:iMPACT - Digilent Plugin: Serial Number: 210274593040
+INFO:iMPACT - Digilent Plugin: Product ID: 01200151
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0108
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 10000000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 2016/05/06 1:14 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx XC7A100T, Version : 1
+INFO:iMPACT:1777 - 
+   Reading /opt/Xilinx/14.7/ISE_DS/ISE/artix7/data/xc7a100t.bsd...
+INFO:iMPACT - Using CseAdapterBSDevice
+INFO:iMPACT:501 - '1': Added Device XC7A100T successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file"/home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit"
+'1': Loading file '/home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit' ...
+done.
+INFO:iMPACT - Using CseAdapterBSDevice
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc7a100t successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 2016/05/06 1:14 PM
+// *** BATCH CMD : Program -p 1 
+Warning: Chain frequency (1000000) is less than the current cable speed(10000000).
+ Adjust to cable speed (1000000).
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   37,58 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+INFO:iMPACT - Creating XC7A100T device.
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 2:46 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   38,07 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 2:54 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   37,58 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 3:05 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   37,58 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 3:34 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   37,58 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 3:51 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   37,58 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 4:03 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   38,07 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 4:15 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   37,58 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 4:25 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   37,58 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     30 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 4:45 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   38,07 C, Min. Reading:   37,09 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 4:52 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   38,07 C, Min. Reading:   37,58 C, Max.Reading:   39,55 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   0,999 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,790 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2016/05/06 4:59 PM
+Updating config file /home/bluelabuser/Desktop/YODA_05-May/YoDawg.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 1000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+1: Device Temperature: Current Reading:   40,53 C, Min. Reading:   39,55 C, Max.Reading:   41,02 C
+1: VCCINT Supply: Current Reading:   1,002 V, Min. Reading:   1,002 V, Max.Reading:   1,005 V
+1: VCCAUX Supply: Current Reading:   1,793 V, Min. Reading:   1,793 V, Max.Reading:   1,796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     31 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - User_EnvOsname: 'Ubuntu'
+INFO:iMPACT - User_EnvOsrelease: 'Ubuntu 14.04.3 LTS'
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   /home/bluelabuser/webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff

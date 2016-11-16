@@ -1,0 +1,1583 @@
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir/tmp -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_19-04/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_05-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg_preroute.twx YoDawg_map.ncd -o YoDawg_preroute.twr YoDawg.pcf -ucf YoDawg.ucf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_06-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_11-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_12-May/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_13-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_13-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_14-May_save/YoDawg.xst" -ofn "/home/bluelabuser/YODA_14-May_save/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+xst -intstyle ise -ifn "/home/bluelabuser/YODA_15-May_working_backup/YoDawg.xst" -ofn "/home/bluelabuser/YODA_15-May_working_backup/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_15-May_working_backup/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_15-May_working_backup/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_15-May_working_backup/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_15-May_working_backup/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_15-May_working_backup/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_15-May_working_backup/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_15-May_working_backup/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_15-May_working_backup/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_17-May_working_on/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Music/YODA_17-final/YoDawg.xst" -ofn "/home/bluelabuser/Music/YODA_17-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.syr" 
+xst -intstyle ise -ifn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.xst" -ofn "/home/bluelabuser/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
+xst -intstyle ise -ifn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.xst" -ofn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.syr" 
+xst -intstyle ise -ifn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.xst" -ofn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.syr" 
+xst -intstyle ise -ifn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.xst" -ofn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.xst" -ofn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.xst" -ofn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.xst" -ofn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.xst" -ofn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+xst -intstyle ise -ifn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.xst" -ofn "C:/Users/Jonathan/Desktop/YODA_18-final/YoDawg.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7a100t-csg324-3 YoDawg.ngc YoDawg.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o YoDawg_map.ncd YoDawg.ngd YoDawg.pcf 
+par -w -intstyle ise -ol high -mt off YoDawg_map.ncd YoDawg.ncd YoDawg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml YoDawg.twx YoDawg.ncd -o YoDawg.twr YoDawg.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f YoDawg.ut YoDawg.ncd 
