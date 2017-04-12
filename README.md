@@ -1,4 +1,4 @@
-#INTRODUCTION
+# INTRODUCTION
 The Mandelbrot Set is a product of IBM research scientist Benoit Mandelbrot’s work in the 1970s and 1980s. Mandelbrot was tasked to investigate into the reduction of white noise that
 disturbed transmission lines. When he began his investigation he took it upon him self to visualize the data, and the results
 showed a structure with self-similarity at all scales. This structure is known as the fractal. There are many sorts of fractals, but what they all have in common are that they show
@@ -12,13 +12,13 @@ themselves. A particular fractal was labelled as the Mandelbrot set as shown in 
 
 
 
-#FPGA BASED ACCELERATION
+# FPGA BASED ACCELERATION
 Using an FPGA, hardware can be designed to optimize the Mandelbrot set calculation. Due to the intensive calculations
 required to continuously update the set, as a result of zooming and panning the image, a parallel implementation can drastically improve the computation time. The course grained
 nature of the operation leads towards a distributed memory approach. Although there is a communication overhead and synchronization cost, the parallelized implementation can leadto an accelerated computation time which is faster than other
 standard processing platforms.
 
-#OVERVIEW
+# OVERVIEW
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mesarcik/MANDELBROT/master/BlockDiagram.png" title="System Block Diagram">
@@ -30,25 +30,25 @@ The Button Driver poles the Buttons and Switch values and sends a panned x, y sh
 press is debounced to ensure a single press doesn’t appear like multiple presses. The zoom factor increments in steps
 of 5. The values of x and y are also divided through by z before being outputted to ensure adequate scaling of the pan.
 
-##Mandelbrot Module
+## Mandelbrot Module
 The Mandelbrot Module takes each pixel and assigns it a corresponding complex number using the scaling factor and the pan specified by Button
 Driver. This complex number is used to calculate the corresponding pixel value. If the corresponding complex
 number is not in the set the pixel value is set to its respective colour based on the number of iterations it took to prove so.
 
-##RAM Block
+## RAM Block
 The memory used is a true dual port RAM block. It has simultaneous read and write functionality provided we do not read from, and write to the same address
 at the same time. The input address is specified by the Mandelbrot Module whereas the output address is specified
 by the Engine Module.
 
 
-##Engine
+## Engine
 The Engine Module is clocked at a speed of 65MHz, this produces a frame refresh rate of 60Hz. The Engine reads from a RAM block only when the bright bit
 from the VGA driver has been set. An address counter (reset to zero for each RAM Block) is used to increment through the
 addresses of each block of memory. The corresponding output data is written to the screen. Once a single RAM Block has
 been read a RAM counter is incremented. This happens when vcount is equal to 48 when the screen resolution is 1024x768
 and there are 16 blocks of memory. This RAM counter then is used to selected the corresponding multiplexer input.
 
-##VGA Driver
+## VGA Driver
 The VGA driver will drive the VGA display using 2 control signals (which are normally high), the horizontal synchronization (hsync) and the vertical
 synchronization (vsync). It also provides the engine with the bright signal which will be high when the engine needs to
 output the RGB pixel data. The clock rate (pixel clock) at which the driver operates is the amount of time to display
@@ -79,7 +79,7 @@ addressing process.
 </p>
 
 
-#DISCLAIMER
+# DISCLAIMER
 This FPGA based project done for digital systems course at The University of Cape Town, by:
 Misha Mesarcik
 Brandon Joffe
