@@ -25,7 +25,7 @@ standard processing platforms.
 </p>
 
 
-##Button Driver 
+## Button Driver 
 The Button Driver poles the Buttons and Switch values and sends a panned x, y shift as well as a zoom factor Z to the Mandelbrot Module. Each button
 press is debounced to ensure a single press doesn’t appear like multiple presses. The zoom factor increments in steps
 of 5. The values of x and y are also divided through by z before being outputted to ensure adequate scaling of the pan.
